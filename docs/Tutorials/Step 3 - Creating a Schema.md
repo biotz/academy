@@ -9,7 +9,7 @@ Now that you have created a Message Type, you have to define the shape of the da
 
 Schemas have a set of data types you can choose in order to define the shape of the data you are sending. It ranges from simple types such as **Integers**, **Decimals** and **Boolean** to more complex types like **Objects/Dictionaries** and **Collection/Arrays**. Each with their own properties and restrictions. This tutorial will not dive into the intricacies of each data type but if you wish to get a more detailed explanation about them, please refer to its reference guide \<add link to message type schema reference here>\. With that said, assuming you are still in the **My test message type** page (the one you created in the previous step), click on **New schema**. Once you have done that you will see the following page:
 
-![Data Ingestion Flow](/img/DataIngestionFlow.png)
+![Data Ingestion Flow](/img/dataIngestionForm.png)
 
 Schemas are defined with items. They can be a single item or multiple items depending on **Item type** you select. To create your first item click on **Add new item**. This will open up a dropdown with the different item data types you can choose from. For the purpose of this tutorial select the **Object** item type.
 
