@@ -12,7 +12,7 @@ However in order to call the **http-forwarder** service you have to identify you
 With that information you can craft an HTTP request for this simulation to get the token. In this tutorial, it is assumed you have some experience working the terminal. As said at the beginning of this tutorial, **HTTPie** and **cURL** tools will be used to provide examples for HTTP requests. Here is the request to retrieve the token using both tools (please make sure to adjust the request with your own credentials):
 
 	
-``jsx title="HTTPie"
+```jsx title="HTTPie"
 http --form POST \
 https://auth.biotz.io/realms/biotz-platform/protocol/openid-connect/token \
 username=~HTTP USER FROM CSV~ \
@@ -20,7 +20,8 @@ password=~PASSWORD FROM CSV~ \
 grant_type=password \
 client_id=biotz-platform-devices \
 scope=openid 
-
+```
+<br></br>
 
 ```jsx title="cURL"
 curl --request POST \
@@ -30,3 +31,8 @@ curl --request POST \
 --data-urlencode client_id=biotz-platform-devices \
 --data-urlencode grant_type=password \
 --data-urlencode scope=openid
+```
+<br></br>
+
+This will return a response which contains the **id_token**. Copy its value and hold on to it as you will need it to <a href="http://localhost:3000/docs/Tutorials/Step%206%20-%20Sending%20a%20data%20ingestion%20request/" target="_self">send the data ingestion request</a>.
+‍

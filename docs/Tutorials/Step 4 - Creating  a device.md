@@ -8,6 +8,7 @@ From the **Device type** dropdown list select **My test device type**. Remember 
 
 
 
-Now, click on **Save**. By doing so, Biotz will register the new device in the platform and perform certain actions to create the credentials for your device. Once it is done, you will automatically download the device credentials file. In the credentials file you will have important and sensitive information about your device. Among other things it contains the username and password of your device that is required to interact with Biotz services. Even though this is a tutorial, bear in mind that the credentials file should be stored in a safe place and avoid sharing it over the network. With this information before sending data to Biotz we need to authenticate and get our token.
+Now, click on **Save**. By doing so, Biotz will register the new device in the platform and perform certain actions to create the credentials for your device. Once it is done, you will automatically download the device credentials file. In the credentials file you will have important and sensitive information about your device. Among other things it contains the username and password of your device that is required to interact with Biotz services. Even though this is a tutorial, bear in mind that the credentials file should be stored in a safe place and avoid sharing it over the network. With this information before sending data to Biotz we need to <a href="http://localhost:3000/docs/Tutorials/Step%205%20-%20Authenticating%20%20a%20device/" target="_self">authenticate and get our token</a>.
+
 
 ‍
