@@ -9,20 +9,20 @@ Now that you have created a Message Type, you have to define the shape of the da
 
 Schemas have a set of data types you can choose in order to define the shape of the data you are sending. It ranges from simple types such as **Integers**, **Decimals** and **Boolean** to more complex types like **Objects/Dictionaries** and **Collection/Arrays**. Each with their own properties and restrictions. This tutorial will not dive into the intricacies of each data type but if you wish to get a more detailed explanation about them, please refer to its reference guide \<add link to message type schema reference here>\. With that said, assuming you are still in the **My test message type** page (the one you created in the previous step), click on **New schema**. Once you have done that you will see the following page:
 
-<div class="data-Ingestion-Form">
+<div class="tutorial-image-container">
     ![Confirm](/img/dataIngestionForm.png)
 </div>
 
 Schemas are defined with items. They can be a single item or multiple items depending on **Item type** you select. To create your first item click on **Add new item**. This will open up a dropdown with the different item data types you can choose from. For the purpose of this tutorial select the **Object** item type.
 
-<div class="all-schemas">
+<div class="tutorial-image-container">
     ![Confirm](/img/AllSchemas.png)
 </div>
 
 
 After doing so, you will see that a new button appears below the new selected item type. That is because the **Object** item type is a complex type and can have child items. Now, click on **Add new item**.
 
-<div class="add-new-item">
+<div class="tutorial-image-container">
     ![Confirm](/img/AddNewItem.png)
 </div>
 
@@ -45,7 +45,7 @@ You might have noticed that to your right there are two checkboxes:
 &nbsp;
 Biotz will use this information to validate the data it receives from your device. In case the shape of the data does not fulfil the defined schema constraints, it will be rejected and discarded. For this tutorial check **Mandatory?** and leave **Can be null?** unchecked.
 
-<div class="schema-definition">
+<div class="tutorial-image-container">
     ![Confirm](/img/SchemaDefinition.png)
 </div>
 Now, add another item and fill in the following details:
@@ -57,7 +57,7 @@ Now, add another item and fill in the following details:
 - **Mandatory?: checked**
 - **Can be null?: unchecked.**
 
-<div class="schema-definition2">
+<div class="tutorial-image-container">
     ![Confirm](/img/SchemaDefinition2.png)
 </div>
 
@@ -66,7 +66,7 @@ Last but not least, we have a special item that serves to create a reliable time
 For this tutorial we are not going to add this item, but in case you want to add it you will notice that when you check that option the **Mandatory?** and **Can be null?** options become **read-only** and the item name is set to **timestamp** by default, this is because Biotz makes some assumptions about this special item.
 
 
-<div class="special-item">
+<div class="tutorial-image-container">
     ![Confirm](/img/SpecialItem.png)
 </div>
 

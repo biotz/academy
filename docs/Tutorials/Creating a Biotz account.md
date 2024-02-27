@@ -12,13 +12,13 @@ First navigate to the [Biotz Cloud](https://auth.biotz.io/realms/biotz-platform/
 
 Since you do not have an account yet, hit the **Register** link at the bottom, below the **Sign In** button. This will lead you to the registration page.
 
-<div class="Register">
+<div class="tutorial-image-container">
     ![New Device2](/img/Register.png)
 </div>
 
 As can be seen in the image above, the registration form asks for just your **Email** address and a **Password**. Once you have entered that information, hit **Register** and you will be prompted to accept the **Terms and Conditions** of Biotz. By accepting them, an email will be sent to you to verify your email address and activate your account.
 
-<div class="Register">
+<div class="tutorial-image-container">
     ![Verifying](/img/Verifying.png)
 </div>
 
@@ -30,13 +30,13 @@ The email you received will have a verification link that you have to use before
 
 By navigating to the verification link you will see the following page:
 
-<div class="Register">
+<div class="tutorial-image-container">
     ![Confirm](/img/Confirm.png)
 </div>
 
 Just click on the link below **Click here to proceed** and you will have verified your email account.
 
-<div class="Click Here">
+<div class="tutorial-image-container">
     ![Click here](/img/ClickHere.png)
 </div>
 
@@ -44,7 +44,7 @@ Just click on the link below **Click here to proceed** and you will have verifie
 
 After verifying your email address you are ready to login into Biotz. Go back to the login page at Biotz Cloud, introduce your login credentials and hit **Sign In**. Next, you will be presented with the following page:
 
-<div class="Register">
+<div class="tutorial-image-container">
     ![Organisation](/img/organisation.png)
 </div>
 

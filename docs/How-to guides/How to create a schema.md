@@ -9,20 +9,23 @@ In order to create a schema having a deceive-type with at least one message type
 
 Schemas are created from the Setup > Data ingestion flow > Device-type > Message-type “New schema”
 
+<div class="tutorial-image-container">
 ![Creating a schema](/img/CreatingSchema.png)
-
+</div>
 When clicking on “New schema” an empty schema is created.
 
+<div class="tutorial-image-container">
 ![New schema](/img/NewSchema.png)
-
+</div>
 First thing will be giving a name to the schema, the purpose of this is just to identify it, it is not further used in the communication or data sending.
 
 <br></br>
 
 After naming the schema the proper and important specification happens under the ‘Schema definition’ section. It is time to let Biotz know how the sending data is structured. Once ‘Add new item’ is selected, a set of different item types are offered to cover almost all the data sending options:
 
+<div class="tutorial-image-container">
 ![item types](/img/itemTypes.png)
-
+</div>
 
 Detailed specification of the item types is shared in here
 
