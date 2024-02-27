@@ -1,6 +1,8 @@
 Before sending any data you need to register a device. To do so, from the sidebar, in the **Device Management** section, click on **Devices**. This will show up a list of devices. In the top right corner you click on **New device**. You will see the following form:
             
-<center><img src="/img/NewDevice.png" alt="New Device"></img></center>
+<div class="tutorial-image-container">
+    ![New Device2](/img/NewDevice2.png)
+</div>
 
 From the **Device type** dropdown list select **My test device type**. Remember that this device type contains all the configuration you have done before. For the name input **My test device** and the same for **Description**. For the **Timezone** select your time zone. Finally, you can optionally add **Tags** to your new device. **Tags** are just key value pairs that serve as metadata about your device. Add one by clicking on **Add new tag**. You can add as many tags as you desire. Tags are useful to filter your devices for example or to add additional information to them.
 
