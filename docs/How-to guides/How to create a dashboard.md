@@ -10,6 +10,9 @@ In order to create a dashboard having a device-type with at least one message ty
 
 Dashboards are created from the “Dashboards” list. Just a name and an optional description are requested.
 
+<div class="tutorial-image-container">
+    ![Dashboards](/img/Dashboards.png)
+</div>
 ![Dashboards](/img/Dashboards.png)
 
 When clicking on “create” an empty dashboard is created.

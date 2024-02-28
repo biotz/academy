@@ -62,8 +62,9 @@ The following are the available logical operators:
     - NOT AND: The group is considered truthy if none or some, but not all individual conditions are met
     -NOT OR: The group is considered truthy if none of the individual conditions is met.
 
+<div class="tutorial-image-container">
 ![Groups](/img/groups.png)
-
+</div>
 
 Conditions and groups can be nested to build complex rules.
 ### Notifications

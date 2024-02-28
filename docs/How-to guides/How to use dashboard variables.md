@@ -12,15 +12,18 @@ The dashboard has to be pre-created, and at least one device is needed.
 
 The variables are created from the dashboard edition view. For that click on the “pencil” icon in the dashboard toolbar.
 
+<div class="tutorial-image-container">
 ![Dashboard Toolbars](/img/dashboardToolbar.png)
+</div>
 
 Creating a variable only requires specifying a name and selecting a device-type.
 <br></br>
 
 The dashboard variables are always device-type specific to ensure that all the selectable devices are compatible with the dashboard panel queries in which the variable is used.
 
+<div class="tutorial-image-container">
 ![Documentation Dasboard](/img/documentationDashboard.png)
-
+</div>
 
 Up to 4 variables can be defined.
 
@@ -31,6 +34,8 @@ Once a dashboard variable is defined it can be used when defining dashboard pane
 
 For that, click on the “Variable, select a variable defined in the dashboard” in the query builder. Then select a specific variable from the list. Continue with the rest of the form as when selecting a specific device.
 
+<div class="tutorial-image-container">
 ![Specific Device](/img/SpecificDevice.png)
+</div>
 
 The dashboard variable is now ready to use. Changing the device in the dashboard view will update the corresponding panels.

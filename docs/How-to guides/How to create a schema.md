@@ -50,16 +50,18 @@ These are the descriptions of each of the parameters of an item:
 - Item name: the name of the column where this data will be stored.
 - Mandatory?
 - Can be null?
-- 
-![parameters](/img/parameters.png)
 
+<div class="tutorial-image-container">
+![parameters](/img/parameters.png)
+</div>
   
 Timestamp ones, the same as the rest with an extra one:
 
     - Payload timestamp?: to be marked if this is the timestamp Biotz should use for the time series date mark.
 
+<div class="tutorial-image-container">
 ![Payload Timestamp](/img/payloadTimestamp.png)
-
+</div>
 
 Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.
 
