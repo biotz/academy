@@ -55,7 +55,7 @@ const config: Config = {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/biotz-logo.svg',
       },
       items: [
         {
@@ -66,8 +66,8 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://www.biotz.io/contact-us',
+          label: 'Contact us',
           position: 'right',
         },
       ],
