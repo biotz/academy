@@ -71,7 +71,7 @@ For this tutorial we are not going to add this item, but in case you want to add
 </div>
 
 
-At this point, you have finished defining the schema you will use in this tutorial. It is now time to give it a name and finally create it. On the top of the screen, before the schema definition, you will have an input to write the name of the schema. Name it **My test schema** and click on **Create** down below. Once you have done that, you will have a schema on your list for the Message Type **My test message type**. Now you have all the basic ingredients that define your data ingestion flow. In the next step you will <a href="http://localhost:3000/docs/Tutorials/Step%204%20-%20Creating%20%20a%20device/" target="_self">create a device</a>.
+At this point, you have finished defining the schema you will use in this tutorial. It is now time to give it a name and finally create it. On the top of the screen, before the schema definition, you will have an input to write the name of the schema. Name it **My test schema** and click on **Create** down below. Once you have done that, you will have a schema on your list for the Message Type **My test message type**. Now you have all the basic ingredients that define your data ingestion flow. In the next step you will <a href="./Step 4 - Creating  a device" target="_self">create a device</a>.
 
 
 ‍

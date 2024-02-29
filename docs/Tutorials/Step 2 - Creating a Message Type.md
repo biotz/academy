@@ -23,4 +23,4 @@ Fill the form with the following information:
 
 To make the tutorial simpler, **HTTP communication protocol** and **JSON message encoding** are the right choices as they do not require as much to work with unlike **MQTT** and **Message Pack**. Leave the **internal name** as it is. Now click on create and you should now have a new Message Type to work with.
 
-In the next step you will <a href="http://localhost:3000/docs/Tutorials/Step%203%20-%20Creating%20a%20Schema/" target="_self">create a Schema</a> for your newly created Message Type. Follow along.
+In the next step you will <a href="./Step 3 - Creating a Schema" target="_self">create a Schema</a> for your newly created Message Type. Follow along.

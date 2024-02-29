@@ -34,5 +34,5 @@ curl --request POST \
 ```
 <br></br>
 
-This will return a response which contains the **id_token**. Copy its value and hold on to it as you will need it to <a href="http://localhost:3000/docs/Tutorials/Step%206%20-%20Sending%20a%20data%20ingestion%20request/" target="_self">send the data ingestion request</a>.
+This will return a response which contains the **id_token**. Copy its value and hold on to it as you will need it to <a href="./Step 6 - Sending a data ingestion request" target="_self">send the data ingestion request</a>.
 ‍

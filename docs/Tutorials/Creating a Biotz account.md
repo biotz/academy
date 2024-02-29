@@ -1,6 +1,12 @@
+---
+
+id: Creating a biotz account
+
+---
 User registration is not currently available for the public. Please [contact us](https://www.biotz.io/contact-us) if you want to create an account.
 
 # Account registration
+
 
 Please not that In order to complete this tutorial you will need a valid email address.
 

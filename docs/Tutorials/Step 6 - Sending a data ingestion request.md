@@ -36,6 +36,7 @@ The response should look like this:
 }
 ```
 
-If that is the response you got, then the request was successful. Now your data should be available on the platform. To see that, in the next step you will create a dashboard to display your data.
+If that is the response you got, then the request was successful. Now your data should be available on the platform. To see that, in the next step you will <a href="./Step 7 - Displaying the data" target="_self">create a dashboard</a> to display your data.
+
 
 ‍

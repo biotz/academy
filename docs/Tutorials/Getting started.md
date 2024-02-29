@@ -29,4 +29,5 @@ In this tutorial, you will be generating various resources within Biotz. As you 
 - **Message Type Schema**: Every message adheres to a specific structure. In Biotz, this structure is termed a Schema. A Schema outlines the format of data for a given Message Type.‍
 - **Device**: This refers to the tangible apparatus that dispatches data to the platform.
 
-With these concepts clarified, your initial task will involve the <a href="https://biotz.github.io/academy/docs/Tutorials/Step%201%20-%20Creating%20a%20Device%20Type/" target="_self">creation of a Device Type</a>.
+With these concepts clarified, your initial task will involve the <a href="/academy/docs/Tutorials/Step%201%20-%20Creating%20a%20Device%20Type.md" target="_self">creation of a Device Type</a>.
+
