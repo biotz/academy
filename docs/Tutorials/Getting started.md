@@ -1,8 +1,11 @@
 ---
 
-title: Getting started
+id: Getting started
 
 ---
+
+# Getting started
+
 This tutorial offers a comprehensive guide on establishing a seamless data ingestion flow within the Biotz platform. The process involves a systematic sequence of 7 steps that entail configuring Biotz's core components. Through these steps, you'll initiate the transmission and ingestion of data. Notably, this tutorial eliminates the necessity for a physical device to complete the procedures; all tasks associated with data transmission and ingestion will be simulated, fostering an accessible and hands-on learning experience.
 
 # Prerequisites
@@ -26,4 +29,4 @@ In this tutorial, you will be generating various resources within Biotz. As you 
 - **Message Type Schema**: Every message adheres to a specific structure. In Biotz, this structure is termed a Schema. A Schema outlines the format of data for a given Message Type.‍
 - **Device**: This refers to the tangible apparatus that dispatches data to the platform.
 
-With these concepts clarified, your initial task will involve the <a href="http://localhost:3000/docs/Tutorials/Step%201%20-%20Creating%20a%20Device%20Type/" target="_self">creation of a Device Type</a>.
+With these concepts clarified, your initial task will involve the <a href="https://biotz.github.io/academy/docs/Tutorials/Step%201%20-%20Creating%20a%20Device%20Type/" target="_self">creation of a Device Type</a>.
