@@ -1,10 +1,10 @@
 There is a standard format of the MQTT topics for sending data from devices to the Biotz IoT Platform. For this to happen there are these pre-steps that must be fulfilled:
 
-- Organisation must be <a href="http://localhost:3000/academy/docs/Tutorials/Creating%20a%20Biotz%20account/" target="_self">registered</a> in Biotz.
-- <a href="http://localhost:3000/academy/docs/Tutorials/Step%201%20-%20Creating%20a%20Device%20Type/" target="_self">Device-Type</a>, <a href="http://localhost:3000/academy/docs/Tutorials/Step%202%20-%20Creating%20a%20Message%20Type/" target="_self">message-type</a> and the schema of data <a href="http://localhost:3000/academy/docs/Tutorials/Step%203%20-%20Creating%20a%20Schema/" target="_self">schema of data</a> to be sent must be registered in Biotz.
+- Organisation must be <a href="./Creating a Biotz account" target="_self">registered</a> in Biotz.
+- <a href="./Step 1 - Creating a Device Type" target="_self">Device-Type</a>, <a href="./Step 2 - Creating a Message Type" target="_self">message-type</a> and the schema of data <a href="http://localhost:3000/academy/docs/Tutorials/Step%203%20-%20Creating%20a%20Schema/" target="_self">schema of data</a> to be sent must be registered in Biotz.
 - <a href="http://localhost:3000/academy/docs/Tutorials/Step%204%20-%20Creating%20%20a%20device/" target="_self">Specific</a> device must be registered.
 
-Find specific MQTT broker information following this link.
+Find specific MQTT broker information following this <a href="./MQTT broker" target="_self">link</a>.
 
 This is the generic MQTT topic builds:
 

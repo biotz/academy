@@ -27,8 +27,9 @@ After naming the schema the proper and important specification happens under the
 ![item types](/img/itemTypes.png)
 </div>
 
-Detailed specification of the item types is shared in here
-
+Detailed specification of the item types is shared in <a href="./Message-type Schema specification
+" target="_self">here</a>.
+‍
 - Collection of identical items: collection of more than one identical item. Being an item anything from an object/map/dictionary to singular element as a text, boolean, integer or decimal.
 - Collection of unrelated items: collection of any kind of item, present just once.
 - Object / Map / Dictionary: They are containers of the final properties, as the collection type items. 1 to n items can be added to this one, they are grouped in two types based on the data needed to define them:
@@ -77,9 +78,10 @@ The scheme must be a valid schema to be able to 'save' it.
 
 <br></br>
 
-Next step should be setting up the other piece of the communication, the device. This other how-to guide talks about it.
+Next step should be setting up the other piece of the communication, the device. This <a href="./How to publish device data" target="_self">other</a>.
+ how-to guide talks about it.
 
 
 
-
+‍
 

@@ -27,7 +27,8 @@ Now that we have our credentials created. We need to configure the authenticatio
 <div class="tutorial-image-container">
 ![developer](/img/biotz-developer-api.png)
 </div>
-Clicking the **Authorize** button a pop-up will show, in which we need to add this information, also found on the Developer API Reference:
+Clicking the **Authorize** button a pop-up will show, in which we need to add this information, also found on the
+<a href="./" target="_self">Developer API</a>.
 
 - **Username:** The username in the credentials file we have downloaded before.
 - **Password:** The password in the credentials file we have downloaded before.

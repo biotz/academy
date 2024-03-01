@@ -64,7 +64,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left',href: 'https://www.biotz.io/company/blog'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           
           href: 'https://www.biotz.io/contact-us',

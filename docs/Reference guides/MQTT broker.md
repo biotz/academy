@@ -2,8 +2,7 @@
 - Host: mqtts://broker.biotz.io
 - Port: 8883
 - Transport: TLS
-- MQTT version: v3.1.1
-
+- MQTT version: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/csprd02/mqtt-v3.1.1-csprd02.html/" target="_self">v3.1.1</a>
 ## Authentication
 The authentication values are generated and provided when a new device is registered in the Biotz Platform. Each device uses its own credentials.
 
@@ -11,7 +10,7 @@ The authentication values are generated and provided when a new device is regist
 - **Username**: generated and provided when a device is registered.
 - **Password**: generated and provided when a device is registered.
 
-More information about device registration <a href="http://localhost:3000/academy/docs/Tutorials/Step%204%20-%20Creating%20%20a%20device/" target="_self">here</a>.
+More information about device registration <a href="./Step 4 - Creating  a device" target="_self">here</a>.
 
 ## Topics
 
@@ -22,7 +21,7 @@ More information about device registration <a href="http://localhost:3000/academ
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
-<a href="http://localhost:3000/academy/docs/How-to%20guides/How%20to%20publish%20device%20data/" target="_self">More information</a>
+<a href="./How to publish device data" target="_self">More information</a>
 ### Subscribe
 
 #### Remote actioning:‍
@@ -30,11 +29,12 @@ biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/subscribe/action/ACTION-MESSAGE-TYPE-INTERNAL-NAME
 ```
-<a href="http://localhost:3000/academy/docs/How-to%20guides/How%20to%20configure%20and%20trigger%20a%20remote%20action%20in%20devices/" target="_self">More information</a>
+<a href="./How to configure and trigger a remote action in devices" target="_self">More information</a>
 
 ### Firmware updates:
 
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/subscribe/firmware/update
 ```
-<a href="http://localhost:3000/academy/docs/How-to%20guides/How%20to%20update%20device%20firmware/" target="_self">More information</a>
+<a href="./How to update device firmware" target="_self">More information</a>
+

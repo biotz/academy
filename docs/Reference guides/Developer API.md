@@ -4,7 +4,7 @@
 Here you can see the different data related to the developer API.
 
 # Reference data
-The API documentation with every available endpoint is <a href="https://api.biotz.io/docs/ui/index.html#/" target="_self">here</a>. If you want to know how to authorize correctly before consuming the API go <a href="http://localhost:3000/academy/docs/How-to%20guides/How%20to%20create%20developer%20API%20credentials/" target="_self">here</a>.
+The API documentation with every available endpoint is <a href="https://api.biotz.io/docs/ui/index.html#/" target="_self">here</a>. If you want to know how to authorize correctly before consuming the API go <a href="./How to create developer API credentials" target="_self">here</a>.
 
 In order to connect correctly you'll need this data:
 

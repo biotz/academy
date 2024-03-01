@@ -42,7 +42,7 @@ Leave the **Internal name** unchanged and click on **Save**. If there is nothing
     ![Confirm](/img/Created.png)
 </div>
 
-Now that you have created a Device Type, the next step is to <a href="./Step 2 - Creating a Message Type
-/" target="_self">create a Message Type </a>.
+Now that you have created a Device Type, the next step is to <a href="./Creating a Device Type
+" target="_self">create a Message Type </a>.
 
 
