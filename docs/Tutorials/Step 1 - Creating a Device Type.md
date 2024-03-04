@@ -1,10 +1,5 @@
----
 
-id: Step 1-Creating a Device Type
-
----
-
-# Creating a Device Type
+## Creating a Device Type
 
 Before we start sending and ingesting data you have to configure your Biotz account to be able to know **who** is sending data and **how** to process it. The first step is to create a Device Type, which will allow you to categorise your devices. Assuming you have signed in into the application, from the sidebar, in the **Setup** section, click on **Device Type**.  
 
@@ -42,7 +37,6 @@ Leave the **Internal name** unchanged and click on **Save**. If there is nothing
     ![Confirm](/img/Created.png)
 </div>
 
-Now that you have created a Device Type, the next step is to <a href="./Creating a Device Type
-" target="_self">create a Message Type </a>.
+Now that you have created a Device Type, the next step is to <a href="./Step 2 - Creating a Message Type" target="_self">create a Message Type </a>.
 
 

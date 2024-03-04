@@ -13,11 +13,11 @@ Dashboards are created from the “Dashboards” list. Just a name and an option
 <div class="tutorial-image-container">
     ![Dashboards](/img/Dashboards.png)
 </div>
-![Dashboards](/img/Dashboards.png)
 
 When clicking on “create” an empty dashboard is created.
-
+<div class="tutorial-image-container">
 ![Empty dashboard](/img/EmptyDashboard.png)
+</div>
 
 ## Creating panels
 
@@ -25,6 +25,10 @@ A dashboard is composed of one or more panels. To create a new one use the “Ne
 <br></br>
 
 At the moment the available panel types are the following: time-series, pie chart and gauge.
+
+<div class="tutorial-image-container">
+    ![creating panels](/img/creating-panels.png)
+</div>
 
 ### General information
 
@@ -43,7 +47,7 @@ The query builder is used to define which data will the panel display.  The x-ax
 <br></br>
 Defining a query requires the following configuration:
 
-- Selecting a device or device variable. Each line in the chart can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see this for more info).
+- Selecting a device or device variable. Each line in the chart can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see <a href="./How to use dashboard variables" target="_self">this</a> for more info).
 - Message type and attribute. Each line in the chart can show the data of a single message type attribute.
 - Aggregation method. The method used to aggregate the devices data to adapt the number of displayed points to the user's screen size and zoom level.
 
@@ -59,8 +63,105 @@ The reason for aggregating the data is performance. Lets say a certain device is
 
 ###### Appearance
 
+<div class="tutorial-image-container">
+![appearance](/img/appearance.png)
+</div>
+
+The following appearance related options are available:
+- X axis title
+- Y axis title
+- Series appearance (configurable for each of them)
+- Display name
+- Color
+- Dash style
+- Marker symbol
+- Enable/disable legend
+
+##### Gauge
+
+###### Query builder
+
+The query builder is used to define which data will the gauge display. A gauge shows the aggregation of a certain device message-type attribute in the selected time-frame period.
+
+
+Defining the query requires the following configuration:
+
+- Selecting a device or device variable. Each gauge can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see <a href="./How to use dashboard variables" target="_self">this</a> for more info).
+- Message type and attribute. Each gauge can work with a single attribute.
+- Aggregation method. The data for the selected device and attribute will be aggregated using this method. Note that the special “first” and “last” aggregation methods are also available that show a single data point.
+‍
+
+##### Attribute type and Available aggregation methods
+
+- Numeric: Count, maximum, minimum, mean, standard deviation, sum, first and last.
+- Boolean: Count, first and last.
+- Text: Count, first and last.
+‍
+
+###### Appearance
 The following appearance related options are available:
 
+- Min value
+- Max value
+- Unit
+- Thresholds: the gauge can represent multiple threshold values using colors.
+- Percentage
+- Color
+
+##### Pie chart
+
+###### Query builder
+The query builder is used to define which data will the pie chart display. Each segment of the pie is defined by an independent query that displays the aggregation of a certain device message type attribute.
+
+‍
+
+Defining the query requires the following configuration:
+
+- Selecting a device or device variable. Each pie segment can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable
+(see <a href="./How to use dashboard variables" target="_self">this</a> for more info).
+- Message type and attribute. Each pie segment can work with a single attribute.
+- Aggregation method. The data for the selected device and attribute will be aggregated using this method. Note that the special “first” and “last” aggregation methods are also available that show a single data point.
+‍
+
+##### Attribute type and Available aggregation methods
+
+- Numeric: Count, maximum, minimum, mean, standard deviation, sum, first and last.
+- Boolean: Count, first and last.
+- Text: Count, first and last.
+‍
+
+###### Appearance
+The following appearance related options are available:
+
+- Enable/disable legend
+- Enable/disable data-labels
+- Segments appearance
+- Display name
+- Color
+‍
+
+##### State chart
+###### Query builder
+The query builder is used to define which data will the state chart display. Each chart can show the data from one variable.
+
+‍
+
+Defining the query requires the following configuration:
+
+- Selecting a device or device variable. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see <a href="./How to use dashboard variables" target="_self">this</a> for more info).
+- Message type and attribute.
+- Aggregation method. The data for the selected device and attribute will be aggregated using this method. Note that the special “first” and “last” aggregation methods are also available that show a single data point.
+‍
+
+##### Attribute type and Available aggregation methods
+
+- Numeric: Count, maximum, minimum, mean, standard deviation, sum, first and last.
+- Boolean: Count, first and last.
+- Text: Count, first and last.
+‍
+
+###### Appearance
+The following appearance related options are available:
 - Enable/disable value with unit marker.
 - Conditions for different styles, applies the first that's true
 - Color

@@ -1,4 +1,4 @@
-To create applications that consume our data we have a Developer API, following <a href="./Step 2 - Creating a Message Type" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
+To create applications that consume our data we have a Developer API, following <a href="/academy/docs/Tutorials/Step 2 - Creating a Message Type" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
 
 ## Credentials creation
 
