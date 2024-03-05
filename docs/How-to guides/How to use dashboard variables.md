@@ -1,3 +1,6 @@
+---
+sidebar_position: 7
+---
 ## Introduction
 
 Dashboard variables allow users to make dashboard panels more dynamic. Instead of hardcoding specific devices in the panels, device selectors can be added to the dashboard. Those selectors are displayed in the main dashboard view, and the selected value can be changed by the final users at any time. Changing the value updates the data for all the panels that are using that variable.

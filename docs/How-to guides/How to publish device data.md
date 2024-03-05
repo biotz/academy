@@ -1,3 +1,8 @@
+---
+sidebar_position: 4
+---
+
+## Introduction
 There is a standard format of the MQTT topics for sending data from devices to the Biotz IoT Platform. For this to happen there are these pre-steps that must be fulfilled:
 
 - Organisation must be <a href="./Creating a Biotz account" target="_self">registered</a> in Biotz.

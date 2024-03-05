@@ -1,3 +1,8 @@
+---
+sidebar_position: 9
+---
+
+## Introduction
 Biotz offers a remote firmware update service. The user will upload the new firmware file to the Biotz IoT platform where it will be registered and stored. From that point on the user will be able to assign any firmware file to existing devices.
 
 For this to be possible, the device must be subscribed to the MQTT topic where Biotz will publish the firmware update message. The topic name follows this format:

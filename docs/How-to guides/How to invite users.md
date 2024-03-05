@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 ## Introduction
 
 Organization administrators can invite new users to their organization. 

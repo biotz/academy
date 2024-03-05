@@ -1,7 +1,6 @@
 ---
-
 id: Creating a biotz account
-
+sidebar_position: 1
 ---
 User registration is not currently available for the public. Please [contact us](https://www.biotz.io/contact-us) if you want to create an account.
 

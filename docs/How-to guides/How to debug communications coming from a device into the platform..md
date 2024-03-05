@@ -1,3 +1,6 @@
+---
+sidebar_position: 11
+---
 ## Introduction
 The communication debugger has as objective to help debug possible errors or problems related to the communication coming from the devices into Biotz Platform.
 

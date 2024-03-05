@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+---
+
+## Introduction
+
 Biotz offers the feature to action devices remotely, this is offered just through MQTT. The configuration of this features include 3 steps:
 
 <br></br>
