@@ -52,10 +52,11 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'biotz Academy',
       logo: {
         alt: 'My Site Logo',
         src: 'img/biotz-logo.svg',
+        srcDark: 'img/biotz-logo-dark.svg',
       },
       items: [
         {
@@ -64,12 +65,13 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {href: 'https://www.biotz.io/company/blog', label: 'Blog', position: 'left'},
         {
           
           href: 'https://www.biotz.io/contact-us',
           label: 'Contact us',
           position: 'right',
+          className: 'boton-navbar' 
         },
       ],
     },
@@ -80,8 +82,10 @@ const config: Config = {
           title: 'General',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: `hello@biotz.io
+              Biotz SL              
+              B-75081794`,
+              href: 'mailto:hello@biotz.io?subject=Website%20contact!',
             },
           ],
         },
@@ -89,34 +93,27 @@ const config: Config = {
           title: 'Head Office',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label:  
+              `Santa Marina 3
+               20560 Oñati               
+              (Guipúzcoa) Spain`,
+              href: 'mailto:asier.galdos@biotz.io?subject=Website%20contact!',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+          
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Linkedin',
+              href: 'https://www.linkedin.com/products/magnet-smart-software-platforms-biotz/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      
+      copyright: `© ${new Date().getFullYear()} Biotz Academy. All Rights Reserved.`,
     },
     prism: {
       theme: prismThemes.github,
