@@ -10,19 +10,19 @@ To create applications that consume our data we have a Developer API, following 
 In order to connect with the API, you need to create some **credentials** in the credentials view, under the **Developer API** section
 
 <div class="tutorial-image-container">
-![credentials creation](/img/credentials-creation.png)
+![Credentials creation](/img/credentials-creation.png)
 </div>
 
 
 Once here, clicking in the **New credentials** button will redirect you to the form. In this view we have to set the credentials name, a description can also be set to differentiate better between one another.
 <div class="tutorial-image-container">
-![new credentials](/img/new-credentials.png)
+![New credentials](/img/new-credentials.png)
 </div>
 <br></br>
 
 When finished, click **Save** and it will show the user information:
 <div class="tutorial-image-container">
-![credentials created succesfully](/img/credentials-created-succesfully.png)
+![Credentials created succesfully](/img/credentials-created-succesfully.png)
 </div>
 As shown in the pop-up, this information will only appear once. So download the credentials file and save somewhere safe.
 
@@ -30,7 +30,7 @@ As shown in the pop-up, this information will only appear once. So download the 
 
 Now that we have our credentials created. We need to configure the authentication. For this example we will use the API documentation mentioned before.
 <div class="tutorial-image-container">
-![developer](/img/biotz-developer-api.png)
+![Developer](/img/biotz-developer-api.png)
 </div>
 Clicking the **Authorize** button a pop-up will show, in which we need to add this information, also found on the
 <a href="./" target="_self">Developer API</a>.
@@ -43,12 +43,12 @@ Clicking the **Authorize** button a pop-up will show, in which we need to add th
 - **Scopes:** You need to check the openid box.
 
 <div class="tutorial-image-container">
-![authorize1](/img/authorize1.png)
+![Authorize1](/img/authorize-1.png)
 </div>
 When the authorization is done correctly, you should see a pop-up saying that your **Authorized**.
 
 <div class="tutorial-image-container">
-![authorize2](/img/authorize2.png)
+![authorize2](/img/authorize-2.png)
 </div>
 With this your capable of consuming the API and get the needed data.
 

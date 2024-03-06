@@ -6,7 +6,7 @@ To create a new dashboard, from the sidebar, click on the **Dashboards** section
 
 
 <div class="tutorial-image-container">
-    ![New Dashboard](/img/NewDashboard.png)
+    ![New Dashboard](/img/new-dashboard.png)
 </div>
 
 Click on create and now you have a dashboard. The dashboard alone is not really useful, so let us create a panel in it. On the dashboard list, click on the dashboard name. This will lead you to the dashboard view. On the top right corner, click on **New panel**. This will open a dropdown with the panel type options you can choose. For the purpose of this tutorial, select **Time series**.
@@ -24,7 +24,7 @@ Once you are in the panel creation page you will see on the left the panel basic
     - **Select aggregation method: Mean**
 
 <div class="tutorial-image-container">
-    ![Query1](/img/Query1.png)
+    ![Query](/img/query.png)
 </div>
 
 You can also change the appearance of the panel but that is out of the scope for this tutorial. As you can see, you can also add more queries to the panel but in this tutorial we want to make it simple and go with just a single query.
@@ -34,14 +34,14 @@ You can also change the appearance of the panel but that is out of the scope for
 Once you fill the query builder with the details above click on **Save**. This will create the panel and it should display a single data point in your.
 
 <div class="tutorial-image-container">
-    ![MyTestPanel](/img/MyTestPanel.png)
+    ![My Test Panel](/img/my-test-panel.png)
 </div>
 
 
 If it says “No data to show” please make sure the time filter, found in the top right toolbar, is set to a smaller time range, for example 30 minutes.
 
 <div class="tutorial-image-container">
-    ![Time Filter](/img/TimeFilter.png)
+    ![Time Filter](/img/time-filter.png)
 </div>
 
 

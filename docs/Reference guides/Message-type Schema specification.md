@@ -11,7 +11,7 @@ Supported data types:
 - <a href="https://msgpack.org/#core-types/" target="_self">MessagePack</a>
 - DB column type
 <div class="tutorial-image-container">
-    ![message-type-schema](/img/message-type-schema.png)
+    ![Message type schema](/img/message-type-schema.png)
 </div>
 
 Additional information about some of the data types above:
