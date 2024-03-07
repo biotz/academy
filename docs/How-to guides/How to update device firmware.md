@@ -1,6 +1,8 @@
 ---
 sidebar_position: 9
+sidebar_label: How to update device firmware
 ---
+# Update device firmware
 
 ## Introduction
 Biotz offers a remote firmware update service. The user will upload the new firmware file to the Biotz IoT platform where it will be registered and stored. From that point on the user will be able to assign any firmware file to existing devices.

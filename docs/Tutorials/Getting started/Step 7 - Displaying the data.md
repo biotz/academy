@@ -1,3 +1,10 @@
+---
+sidebar_position: 7
+sidebar_label: Step 7 - Displaying the data
+---
+
+# Displaying the data
+
 In order to display the data you will need to create a dashboard and a panel. A dashboard is a collection of panels. Each panel contains a specific query to display your data. You can also apply different customizations to the panel's appearance. However, the focus of this tutorial is to just display your newly ingested data. Bear in mind that the data you will display is a single point, if you have followed this tutorial. Displaying a single point is not very useful but the end goal is to learn how it works. So, later on when you create your real dashboard panels you have a good foundation to do so.
 
 <br></br>

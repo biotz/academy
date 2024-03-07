@@ -1,7 +1,8 @@
 ---
 sidebar_position: 4
+sidebar_label: How to publish device data using MQTT - setup devices to send data
 ---
-
+# Publishing Device data
 ## Introduction
 There is a standard format of the MQTT topics for sending data from devices to the Biotz IoT Platform. For this to happen there are these pre-steps that must be fulfilled:
 

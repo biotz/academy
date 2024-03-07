@@ -1,3 +1,11 @@
+---
+sidebar_position: 5
+sidebar_label: Step 5 - Authenticating  a device
+---
+
+# Authenticating a device
+
+
 In this tutorial, as said in the beginning, the data sending will be simulated. To do so, you will make an HTTP request to the **http-forwarder** service of Biotz which will, as the name implies, forward your data ingestion request to the competent services. That is the reason why you chose the **HTTP communication protocol** before when creating a message type.
 
 

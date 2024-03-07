@@ -1,6 +1,9 @@
 ---
 sidebar_position: 6
+sidebar_label: How to create a dashboard
 ---
+# How to create a dashboard
+
 ## Introduction
 
 Biotz provides a dashboarding tool that can be used to visualize the data coming from the devices.

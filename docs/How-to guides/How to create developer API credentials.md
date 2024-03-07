@@ -1,6 +1,9 @@
 ---
 sidebar_position: 10
+sidebar_label: How to create Developer API credentials
 ---
+# Developer API
+
 ## Introduction
 
 To create applications that consume our data we have a Developer API, following <a href="/academy/docs/Tutorials/Step 2 - Creating a Message Type" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.

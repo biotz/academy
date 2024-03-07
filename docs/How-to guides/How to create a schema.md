@@ -1,6 +1,10 @@
 ---
 sidebar_position: 3
+sidebar_label: How to create a schema - setup apllication to ingest certain data
 ---
+
+# How to create a schema
+
 ## Introduction
 
 When data arrives into Biotz's ingestion system, the received package of data is checked against schemas defined in Biotz. These schemas are the definition of the content of the data package and the user must take care of defining them in the system.

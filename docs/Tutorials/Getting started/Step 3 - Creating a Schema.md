@@ -1,7 +1,10 @@
-
+---
+sidebar_position: 3
+sidebar_label: Step 3 - Creating a Schema
 ---
 
----
+# Creating a Schema
+
 Now that you have created a Message Type, you have to define the shape of the data for that Message Type. This is what is called Schemas in Biotz. Schemas are just the definition of the structure of what your device will send to the platform. This helps Biotz ingest and process your data effectively.
 
 

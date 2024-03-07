@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+sidebar_label: How to register devices
 ---
+# How to register devices
+
 ## Introduction
 
 Biotz offers two ways for registering physical devices of a certain device type. This is used by Biotz to generate internal machinery for specific devices. But also as a way to have data of the collection of devices gathered together.

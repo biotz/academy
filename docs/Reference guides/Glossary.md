@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+sidebar_label: Glossary
+---
+# Glossary
 **Device type**: Biotz allows managing multiple different devices from the same account. “Types” are a way of grouping those devices.
 
 **Device**: a device in Biotz corresponds to a single device in the physical world. There should be a one to one mapping between the IOT devices and the devices registered in Biotz.

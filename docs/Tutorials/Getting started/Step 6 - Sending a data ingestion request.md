@@ -1,3 +1,9 @@
+---
+sidebar_position: 6
+sidebar_label: Step 6 - Sending a data ingestion request
+---
+
+# Sending a data ingestion request
 
 Now that you have a token from Biotz Identity Provider, it is time to send actual data to Biotz. In this tutorial, as said before, you will simulate a device sending data using the terminal. The approach is basically the same as to retrieve a token, just an HTTP request to the **http-forwarder** service. It will take your request and re-route it into a queue to be processed when the system is available.
 <br></br>

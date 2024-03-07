@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+sidebar_label: Message-type Schema specification
+---
+# Message-type Schema specification
+
 his is the specification for the schema of a message-type. The users will have to specify a device-type, with one to many message-type. Each message-type will have one to many schemas.
 
 This schema is the structure of the data that the device will be sending in each communication with Biotz. The definition provided in the schema creation in the web application is the one used to validate the incoming data. Also, this will be used to structure the specific database schema for the data to be stored in a structured way.

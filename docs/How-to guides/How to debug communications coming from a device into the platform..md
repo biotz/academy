@@ -1,6 +1,9 @@
 ---
 sidebar_position: 11
+sidebar_label: How to debug communication coming from devices into the application
 ---
+# How to debug communications coming from a device into the platform.
+
 ## Introduction
 The communication debugger has as objective to help debug possible errors or problems related to the communication coming from the devices into Biotz Platform.
 

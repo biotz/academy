@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+sidebar_label: Step 2 - Creating a Message Type
+---
+# Creating a Message Type
 As the name implies this is a type of message your device can send. If your device outputs different information structures, each of them would be a different Message Type. In this tutorial, you will create a single Message Type for the sake of simplicity. To do so, from the sidebar, in the **Setup** section, click on **Data Ingestion Flow**. You will be presented with the following page:
 
 <div class="tutorial-image-container">

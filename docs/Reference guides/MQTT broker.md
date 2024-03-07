@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+sidebar_label: MQTT Broker
+---
+# MQTT Broker Reference
+
 ## Connection details
 - Host: mqtts://broker.biotz.io
 - Port: 8883

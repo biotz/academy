@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
+sidebar_label: How to configure and trigger a remote action in devices
 ---
 
-## Introduction
+# Configure and trigger a 'remote actioning'
 
 Biotz offers the feature to action devices remotely, this is offered just through MQTT. The configuration of this features include 3 steps:
 
-<br></br>
 
 ## Step 1 - Setup the 'Remote actioning' in Biotz platform.
 

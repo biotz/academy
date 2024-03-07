@@ -1,6 +1,9 @@
 ---
 sidebar_position: 8
+sidebar_label: How to define alarm triggers
 ---
+# How to define alarm triggers
+
 ## Introduction
 
 Biotz provides alarm generation and notification capabilities based on the data received in the data ingestion flows. The alarm trigger or rules are evaluated against each received data observation, and when an alarm is triggered the corresponding users are notified.

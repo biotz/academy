@@ -1,6 +1,9 @@
 ---
 sidebar_position: 1
+sidebar_label: How to invite users
 ---
+
+# How to invite users
 ## Introduction
 
 Organization administrators can invite new users to their organization. 
