@@ -17,12 +17,12 @@ In order to create a schema having a deceive-type with at least one message type
 Schemas are created from the Setup > Data ingestion flow > Device-type > Message-type “New schema”
 
 <div class="tutorial-image-container">
-![Creating a schema](/img/creating-schema.png)
+![Creating a schema](/academy/docs/How-to guides/img/creating-schema.png)
 </div>
 When clicking on “New schema” an empty schema is created.
 
 <div class="tutorial-image-container">
-![New schema](/img/new-schema.png)
+![New schema](/academy/docs/How-to guides/img/new-schema.png)
 </div>
 First thing will be giving a name to the schema, the purpose of this is just to identify it, it is not further used in the communication or data sending.
 
@@ -31,7 +31,7 @@ First thing will be giving a name to the schema, the purpose of this is just to 
 After naming the schema the proper and important specification happens under the ‘Schema definition’ section. It is time to let Biotz know how the sending data is structured. Once ‘Add new item’ is selected, a set of different item types are offered to cover almost all the data sending options:
 
 <div class="tutorial-image-container">
-![Item types](/img/item-types.png)
+![Item types](/academy/docs/How-to guides/img/item-types.png)
 </div>
 
 Detailed specification of the item types is shared in <a href="/academy/docs/Reference guides/Message-type Schema specification"target="_self">here</a>.
@@ -59,7 +59,7 @@ These are the descriptions of each of the parameters of an item:
 - Can be null?
 
 <div class="tutorial-image-container">
-![parameters](/img/parameters.png)
+![parameters](/academy/docs/How-to guides/img/parameters.png)
 </div>
   
 Timestamp ones, the same as the rest with an extra one:
@@ -67,7 +67,7 @@ Timestamp ones, the same as the rest with an extra one:
     - Payload timestamp?: to be marked if this is the timestamp Biotz should use for the time series date mark.
 
 <div class="tutorial-image-container">
-![Payload Timestamp](/img/payload-timestamp.png)
+![Payload Timestamp](/academy/docs/How-to guides/img/payload-timestamp.png)
 </div>
 
 Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.

@@ -7,20 +7,20 @@ sidebar_label: Step 1 - Creating a Device Type
 Before we start sending and ingesting data you have to configure your Biotz account to be able to know **who** is sending data and **how** to process it. The first step is to create a Device Type, which will allow you to categorise your devices. Assuming you have signed in into the application, from the sidebar, in the **Setup** section, click on **Device Type**.  
 
 <div class="tutorial-image-container">
-    ![Device type](/img/device-type.png)
+    ![Device type](../../../docs/Tutorials/img/device-type.png)
 </div>
 
 You will be presented with the following page:
 
 <div class="tutorial-image-container">
-    ![New Device Type](/img/new-device-type.png)
+    ![New Device Type](../../../docs/Tutorials/img/new-device-type.png)
 </div>
 
 
 If you haven’t created any Device Type yet this table should be empty. Now, on the top right corner of the table click on New Device Type. Once you have done, you will have to fill a few details about the device type such as name and optionally description as can been seen in the image below:
  
 <div class="tutorial-image-container">
-    ![Create New](/img/create-new.png)
+    ![Create New](../../../docs/Tutorials/img/create-new.png)
 </div>
 
 
@@ -37,7 +37,7 @@ The **Internal name** is auto-generated based on the **Name** you write. However
 Leave the **Internal name** unchanged and click on **Save**. If there is nothing wrong, the device type should be created and you will be notified that is succeeded:
 
 <div class="tutorial-image-container">
-    ![Confirm](/img/created.png)
+    ![Confirm](../../../docs/Tutorials/img/created.png)
 </div>
 
 Now that you have created a Device Type, the next step is to <a href="./Step 2 - Creating a Message Type" target="_self">create a Message Type </a>.

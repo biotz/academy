@@ -28,7 +28,7 @@ Follow the steps:
 - That will present the form for the device registration.
 
 <div class="tutorial-image-container">
-![Using the UI](/img/using-ui.png)
+![Using the UI](/academy/docs/How-to guides/img/using-ui.png)
 </div>
 
 Parameters description:
@@ -48,7 +48,7 @@ Follow the steps:
     - That will present the form for the device registration.
     - 
 <div class="tutorial-image-container">
-![Using the CSV way](/img/using-csv-way.png)
+![Using the CSV way](/academy/docs/How-to guides/img/using-csv-way.png)
 </div>
 Parameters description:
 
