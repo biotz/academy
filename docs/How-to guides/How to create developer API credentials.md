@@ -6,7 +6,7 @@ sidebar_label: How to create Developer API credentials
 
 ## Introduction
 
-To create applications that consume our data we have a Developer API, following <a href="/academy/docs/Tutorials/Step 2 - Creating a Message Type" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
+To create applications that consume our data we have a Developer API, following <a href="https://api.test.biotz.io/docs/ui/index.html#/" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
 
 ## Credentials creation
 
@@ -36,7 +36,7 @@ Now that we have our credentials created. We need to configure the authenticatio
 ![Developer](/img/biotz-developer-api.png)
 </div>
 Clicking the **Authorize** button a pop-up will show, in which we need to add this information, also found on the
-<a href="./" target="_self">Developer API</a>.
+<a href="/academy/docs/Reference guides/Developer API" target="_self">Developer API Reference</a>.
 
 - **Username:** The username in the credentials file we have downloaded before.
 - **Password:** The password in the credentials file we have downloaded before.

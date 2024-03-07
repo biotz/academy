@@ -8,7 +8,7 @@ sidebar_label: MQTT Broker
 - Host: mqtts://broker.biotz.io
 - Port: 8883
 - Transport: TLS
-- MQTT version: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/csprd02/mqtt-v3.1.1-csprd02.html/" target="_self">v3.1.1</a>
+- MQTT version: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/csprd02/mqtt-v3.1.1-csprd02.html" target="_self">v3.1.1</a>
 ## Authentication
 The authentication values are generated and provided when a new device is registered in the Biotz Platform. Each device uses its own credentials.
 
@@ -16,7 +16,7 @@ The authentication values are generated and provided when a new device is regist
 - **Username**: generated and provided when a device is registered.
 - **Password**: generated and provided when a device is registered.
 
-More information about device registration <a href="/academy/docs/Tutorials/Step 1 - Creating a Device Type" target="_self">here</a>.
+More information about device registration <a href="/academy/docs/Tutorials/Getting started/Step 1 - Creating a Device Type" target="_self">here</a>.
 
 ## Topics
 
@@ -28,6 +28,7 @@ More information about device registration <a href="/academy/docs/Tutorials/Step
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
 <a href="/academy/docs/How-to guides/How to publish device data" target="_self">More information</a>
+
 ### Subscribe
 
 #### Remote actioning:‍
