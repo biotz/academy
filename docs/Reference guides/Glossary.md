@@ -27,5 +27,5 @@ Dashboards:
 **Event**: an event is something that happened within the Biotz platform and has been registered for tracking purposes. For example, when a user joins an organization an event is registered. The events can sometimes generate notifications for the users.
 
 <div class="tutorial-image-container">
-    ![Glossary](/academy/docs/Reference guides/img/glossary.png)
+    ![Glossary](img/glossary.png)
 </div>

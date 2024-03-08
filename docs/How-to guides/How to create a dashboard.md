@@ -17,12 +17,12 @@ In order to create a dashboard having a device-type with at least one message ty
 Dashboards are created from the “Dashboards” list. Just a name and an optional description are requested.
 
 <div class="tutorial-image-container">
-    ![Dashboards](/academy/docs/How-to guides/img/dashboards.png)
+    ![Dashboards](img/dashboards.png)
 </div>
 
 When clicking on “create” an empty dashboard is created.
 <div class="tutorial-image-container">
-![Empty dashboard](/academy/docs/How-to guides/img/empty-dashboard.png)
+![Empty dashboard](img/empty-dashboard.png)
 </div>
 
 ## Creating panels
@@ -33,7 +33,7 @@ A dashboard is composed of one or more panels. To create a new one use the “Ne
 At the moment the available panel types are the following: time-series, pie chart and gauge.
 
 <div class="tutorial-image-container">
-    ![Creating panels](/academy/docs/How-to guides/img/creating-panels.png)
+    ![Creating panels](img/creating-panels.png)
 </div>
 
 ### General information
@@ -70,7 +70,7 @@ The reason for aggregating the data is performance. Lets say a certain device is
 ###### Appearance
 
 <div class="tutorial-image-container">
-![appearance](/academy/docs/How-to guides/img/appearance.png)
+![appearance](img/appearance.png)
 </div>
 
 The following appearance related options are available:

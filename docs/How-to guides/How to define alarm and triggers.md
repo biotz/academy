@@ -69,7 +69,7 @@ The following are the available logical operators:
     -NOT OR: The group is considered truthy if none of the individual conditions is met.
 
 <div class="tutorial-image-container">
-![Groups](//academy/docs/How-to guides/img/groups.png)
+![Groups](img/groups.png)
 </div>
 
 Conditions and groups can be nested to build complex rules.
