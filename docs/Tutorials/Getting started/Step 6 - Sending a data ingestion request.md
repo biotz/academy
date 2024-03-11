@@ -17,7 +17,7 @@ In this case the **Object** is an JSON object since the **mytestmessag** definit
 <br></br>
 Now, the request is very simple, you will send just a single sample of data (a single request in this case) to the platform. Here is an example using both HTTPie and cURL.
 
-```jsx title="HTTPie"
+```bash title="HTTPie"
 http --auth-type bearer \
 --auth ~YOUR ID_TOKEN~ \
 POST https://ingestion-http.biotz.io/api/device/publish/data/mytestmessag \
@@ -25,7 +25,7 @@ hum=20.5 temp=25.6
 ```
 <br></br>
 
-```jsx title="cURL"
+```bash title="cURL"
 curl --header "Content-Type: application/json" \
 --header "Authorization: Bearer ~YOUR ID_TOKEN~" \
 --request POST \
@@ -35,7 +35,7 @@ https://ingestion-http.biotz.io/api/device/publish/data/~INTERNAL NAME OF MESSAG
 <br></br>
 
 The response should look like this:
-```
+```json
 {
 	"success?": true,
 	"details": {}

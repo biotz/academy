@@ -29,10 +29,14 @@ The reason why the firmware update message is sent with the MQTT Retained flag s
 
 The payload of the MQTT message is a UTF-8 encoded string, that holds a JSON object with the following content:
 
-```
+```json
 {
-  "firmware-name": "firmware name",
-  "download-url": "https://firmware-download-url"
+  "name": "firmware name",
+  "download-url": "https://firmware-download-url",
+  "size": 0,
+  "md5": "hash",
+  "sha1": "hash",
+  "sha256": "hash"
 }
 ```
 
