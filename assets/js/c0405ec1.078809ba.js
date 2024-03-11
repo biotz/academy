@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[736],{743:t=>{t.exports=JSON.parse('{"title":"Tutorials","slug":"/category/tutorials","permalink":"/academy/docs/category/tutorials","navigation":{"next":{"title":"Creating a biotz account","permalink":"/academy/docs/Tutorials/Creating a biotz account"}}}')}}]);
