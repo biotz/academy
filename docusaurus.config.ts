@@ -60,10 +60,19 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: 'docs/category/tutorials',
           position: 'left',
           label: 'Tutorial',
+        },
+        {
+          to: 'docs/category/how-to-guides',
+          position: 'left',
+          label: 'How to',
+        },
+        {
+          to: 'docs/category/reference-guides',
+          position: 'left',
+          label: 'Reference guides',
         },
         {href: 'https://www.biotz.io/company/blog', label: 'Blog', position: 'left'},
         {
