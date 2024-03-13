@@ -5,8 +5,8 @@ services:
     ports:
       - '3000:3000/tcp'
     volumes:
-      - './docs:/app/docs'
-      - './src:/app/src'
-      - './static:/app/static'
-      - './docusaurus.config.js:/app/docusaurus.config.js'
-      - './sidebars.js:/app/sidebars.js'
+      - '.:/app'
+    command: 
+      - npm
+      - run
+      - start-dev
