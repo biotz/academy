@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Biotz Academy',
-  tagline: '',
+  tagline: 'Everything you need to know about Biotz to master the ins and outs of our IoT ecosystem.',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here

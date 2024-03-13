@@ -57,6 +57,7 @@
   --ifm-color-primary-light: #16113e;
   --ifm-color-primary-lighter: #171140;
   --ifm-color-primary-lightest: #1a1449;
+  
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(20, 15, 56, 0.1);
 }
@@ -76,4 +77,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.footer {
+  background-color: #5133FF; /* Cambia #ff0000 por el color que desees */
+  color: #ffffff; /* Cambia #ffffff por el color del texto que desees */
 }
