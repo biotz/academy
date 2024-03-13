@@ -28,4 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build 
-          keep_files: true # We need to add this in order to maintain the CNAME file, needed to configure the github page domain.
+          cname: academy.biotz.io
