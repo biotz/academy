@@ -34,7 +34,7 @@ After naming the schema the proper and important specification happens under the
 ![Item types](img/item-types.png)
 </div>
 
-Detailed specification of the item types is shared in <a href="/academy/docs/Reference guides/Message-type Schema specification"target="_self">here</a>.
+Detailed specification of the item types is shared in <a href="/docs/Reference guides/Message-type Schema specification"target="_self">here</a>.
 ‍
 - Collection of identical items: collection of more than one identical item. Being an item anything from an object/map/dictionary to singular element as a text, boolean, integer or decimal.
 - Collection of unrelated items: collection of any kind of item, present just once.

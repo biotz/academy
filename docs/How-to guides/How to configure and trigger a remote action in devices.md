@@ -22,7 +22,7 @@ Biotz shows the same interface for both message types (specific to communication
 
 ## Step 2 - Setup device to get the order to perform the action.
 
-Find specific MQTT broker information following this <a href="/academy/docs/Reference guides/MQTT broker" target="_self">link</a>.
+Find specific MQTT broker information following this <a href="/docs/Reference guides/MQTT broker" target="_self">link</a>.
 
 The specific device of the selected device type should be already registered under the 'Device Management' section for devices. The device should be configured to SUBSCRIBE to the specific topic that Biotz will use to notify the action to the device. The topic follows this pattern:
 

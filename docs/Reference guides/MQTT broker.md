@@ -16,7 +16,7 @@ The authentication values are generated and provided when a new device is regist
 - **Username**: generated and provided when a device is registered.
 - **Password**: generated and provided when a device is registered.
 
-More information about device registration <a href="/academy/docs/Tutorials/Getting started/Step 1 - Creating a Device Type" target="_self">here</a>.
+More information about device registration <a href="/docs/Tutorials/Getting started/Step 1 - Creating a Device Type" target="_self">here</a>.
 
 ## Topics
 
@@ -27,7 +27,7 @@ More information about device registration <a href="/academy/docs/Tutorials/Gett
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
-<a href="/academy/docs/How-to guides/How to publish device data" target="_self">More information</a>
+<a href="/docs/How-to guides/How to publish device data" target="_self">More information</a>
 
 ### Subscribe
 
@@ -36,12 +36,12 @@ biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/subscribe/action/ACTION-MESSAGE-TYPE-INTERNAL-NAME
 ```
-<a href="/academy/docs/How-to guides/How to configure and trigger a remote action in devices" target="_self">More information</a>
+<a href="/docs/How-to guides/How to configure and trigger a remote action in devices" target="_self">More information</a>
 
 ### Firmware updates:
 
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/subscribe/firmware/update
 ```
-<a href="/academy/docs/How-to guides/How to update device firmware" target="_self">More information</a>
+<a href="/docs/How-to guides/How to update device firmware" target="_self">More information</a>
 
