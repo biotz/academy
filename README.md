@@ -1,41 +1,30 @@
-# Website
+# Biotz Academy
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Tutorials
 
-### Installation
+In this complete tutorial, you will find how to create effective data ingestion flow within the Biotz IoT platform, following the different steps. Starting with account creation, and continuing through several more steps.
 
-```
-$ yarn
-```
+## How-to guides
 
-### Local Development
+This collection of guides has been crafted to assist you in navigating the features of IoT development and implementation.
 
-```
-$ yarn start
-```
+## Reference
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Your go-to resource for in-depth information about the IoT platform's funcionalities and components.
 
-### Build
 
-```
-$ yarn build
-```
+## Local Development
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The local development is explained step by step in the <a href="/SETUP.md" target="_self">SETUP.md</a> file.
 
-### Deployment
+## Deployment
 
-Using SSH:
+The deployment is made by the github/workflows <a href="/.github/workflows/deploy.yml" target="_self">deploy.yml</a>.
 
-```
-$ USE_SSH=true yarn deploy
-```
+## Academy page
 
-Not using SSH:
+Here is the Biotz Academy <a href="/https://academy.biotz.io/" target="_self">page</a>.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+

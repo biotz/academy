@@ -14,14 +14,14 @@ Make sure you have the following instaled on your system.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your_username/your_project.git
+git clone git@github.com:biotz/academy.git
 ```
 
 ### 2. Navigate to the Project Directory
 
 
 ```bash
-cd your_project
+cd academy
 ```
 
 ### 3. Build and Run the Containers
