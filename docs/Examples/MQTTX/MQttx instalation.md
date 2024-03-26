@@ -17,7 +17,10 @@ There choose your operating system and download the corresponding version for yo
 
 Once the download is complete, follow the installation instructions for your operating system. In most cases, this will involve simply opening the downloaded file and following the steps in the installation wizard but here is an example of how to install it using commands after dowloading.
 
+This is Debian/Ubuntu example.
+
 <div class="tutorial-image-container">
 ![Comands](../img/commands.png)
 </div>
+
 
