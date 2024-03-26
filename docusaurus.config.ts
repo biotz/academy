@@ -74,6 +74,12 @@ const config: Config = {
           position: 'left',
           label: 'Reference guides',
         },
+        {
+          to: 'docs/category/Examples',
+          position: 'left',
+          label: 'Examples',
+        },
+        
         {href: 'https://www.biotz.io/company/blog', label: 'Blog', position: 'left'},
         {
           
