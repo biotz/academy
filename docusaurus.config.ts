@@ -75,7 +75,7 @@ const config: Config = {
           label: 'Reference guides',
         },
         {
-          to: 'docs/category/Examples',
+          to: 'docs/category/examples',
           position: 'left',
           label: 'Examples',
         },
