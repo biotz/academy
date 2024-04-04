@@ -27,15 +27,16 @@ To subscribe to a topic, click on the "Subscribe" icon and enter the name of the
 
 This time you are going to do a test to publish a message and establish a connection with Biotz.
 
-You are going to create two different messages, one will be incorrect and one will be correct, and you willll see the difference between both.
+You are going to create two different messages, one will be incorrect and one will be correct, and you will see the difference between both.
 
 ## Message with wrong JSON payload
+In topic, you will have to write something similar to this with the data of the excel. Aqui sera importante poner cada dato correctamente para que al establecer la conexion, sea correcto.
 ```
   biotz/1/0/d12af5ca-6120-494e-90e4-63a4036f45f9/dcbed620-4992-4695-8207-25e889b9e0c3/subscribe/action/data
 ```
 
 And between the braces, the following JSON payload
-```
+```JSON
  "msg": "hello"
 ```
 
@@ -60,7 +61,7 @@ If you have sent the first message you will see this:
 ![box](../img/incorrect-message.png)
 </div>
 
-As you can see, the following error will appear, this indicates that the message is not sent correctly.ç
+As you can see, the following error will appear, this indicates that the message is not sent correctly. The message appears to be a simple JSON object with a key "msg" and a value "hello". If the receiving system expects a specific format or is configured to process only certain types of messages, it may generate an error when receiving a message with a different format.
 
 Now you will return to MQTTX app and you will send it in this other way.
 
@@ -70,12 +71,12 @@ You are going to publish the message in another way so that it works, and this t
 
 You will need to replace what was inside the braces with this JSON payload:
 
-```
+```JSON
 "temperature": 25.7,
 "luminosity": 67,
 "timestamp": "1710519995000"
 ```
-
+This message appears to be a data set that includes temperature and luminosity information, along with a timestamp. 
 When doing that, this is what you will send:
 
 <div class="tutorial-image-container">
@@ -88,4 +89,10 @@ Then return to app.biotz.io and by doing the same process you did when sending t
 ![Message](../img/correct-message.png)
 </div>
 
-As you can see in the image, this time there are no errors and you have been able to establish a connection with Biotz using the MQTTX app.
+As you can see in the image, this time there are no errors because the message formatting is correct.
+In this way, you have been able to establish a connection with Biotz using the MQTTX app.
+
+to connect and disconnect in MQTTX you have to use this connect button
+<div class="tutorial-image-container">
+![Message](../img/connect-disconnect.png)
+</div>
