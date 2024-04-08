@@ -1,9 +1,9 @@
 ---
 sidebar_position: 4
-sidebar_label: Sending message to establish connection with Biotz
+sidebar_label: Publish data to Biotz
 ---
 
-# Sending message to establish connection with Biotz
+# Publish data to Biotz
 
 To post messages, click on the "Post" icon and fill in the message and topic details.
 To subscribe to a topic, click on the "Subscribe" icon and enter the name of the topic you wish to subscribe to.
@@ -13,10 +13,18 @@ To connect and disconnect in MQTTX you have to use this connect button
 </div>
 This time you are going to do a test to publish a message and establish a connection with Biotz.
 
-You are going to create two different messages, one will be incorrect for the format that corresponds to it, and the other one will be the correct one and you will see the difference between both.
+Next, we will guide you through the process of verifying the successful publication of data to Biotz using our debugging tool.
+
+For this demonstration, we'll focus on a JSON format. We'll provide examples of both correct and incorrect JSON payloads to illustrate the testing process.
 
 ## Correct message
-In topic, there is a standard format of the MQTT topics for sending data from devices to the Biotz IoT Platform. 
+Now, you will have to modify the topic, the topic is a string that is used to identify the destination of a message. It serves as a kind of address or channel to which the message is sent and to which other users can subscribe to receive messages related to that specific topic.
+ 
+<div class="tutorial-image-container">
+![Topic](../img/topic.png)
+</div>
+
+There is a standard format of the MQTT topics for sending data from devices to the Biotz IoT Platform:
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
@@ -42,7 +50,7 @@ To send the message, first you will have to know the format in which you will ha
 <div class="tutorial-image-container">
 ![Message](../img/attributes.png)
 </div>
-After looking at the attributes, you have to write the message between the braces. The message would be something like this.
+After looking at the attributes, you have to write the correct JSON payload between the braces. The message would be something like this.
 <div class="tutorial-image-container">
 ![Message](../img/2-message.png)
 </div>
@@ -63,7 +71,7 @@ If you have sent the message you will see this:
 <div class="tutorial-image-container">
 ![box](../img/correct-message.png)
 </div>
-As we can see if everything went well, the message will have been sent correctly and you will see something like this, the green circle will indicate that the message is correct, that means the format of the JSON payload is correct.
+As we can see if everything went well, the message will have been sent correctly and you will see something like this, the green circle will indicate that the message is correct, that means the format of the message is correct.
 
 ## Incorrect message
 Now let's modify something in the payload to send the message incorrectly to see the difference.
@@ -79,4 +87,4 @@ Instead of "temperature", let's type "temperatura" and see how it changes.
 </div>
 When you go back to communication debugger now this is what will appear, as you can see, now the circle is orange and an error appears."no-valid-schema-found-for-given-message".This is because the format is not correct now.
 
-With this tutorial you have learned how to establish a connection to Biotz via MQTTX.
+With this tutorial you have learned how to establish a connection and publish messages to Biotz via MQTTX.
