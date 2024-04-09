@@ -5,20 +5,23 @@ sidebar_label: Publish data to Biotz
 
 # Publish data to Biotz
 
-To post messages, click on the "Post" icon and fill in the message and topic details.
-To subscribe to a topic, click on the "Subscribe" icon and enter the name of the topic you wish to subscribe to.
-To connect and disconnect in MQTTX you have to use this connect button
+**Post Messages:** You can post messages in different topics on the MQTT servers you are connected to. This allows you to send information to devices subscribed to those topics.
+
+**Subscribe to Topics:** You can subscribe to specific topics to receive messages posted in those topics. This allows you to monitor and receive information from devices and systems that publish data in those topics.
+
+To connect and disconnect in MQTTX you have to use this connect button:
+
 <div class="tutorial-image-container">
 ![Message](../img/connect-disconnect.png)
 </div>
-This time you are going to do a test to publish a message and establish a connection with Biotz.
+This time you are going to establish connection with Biotz to do a test and **publish** a message.
 
 Next, we will guide you through the process of verifying the successful publication of data to Biotz using our debugging tool.
 
 For this demonstration, we'll focus on a JSON format. We'll provide examples of both correct and incorrect JSON payloads to illustrate the testing process.
 
 ## Correct message
-Now, you will have to modify the topic, the topic is a string that is used to identify the destination of a message. It serves as a kind of address or channel to which the message is sent and to which other users can subscribe to receive messages related to that specific topic.
+To send the message, you will have to modify the topic, the topic is a string that is used to identify the destination of a message. It serves as a kind of address or channel to which the message is sent and to which other users can subscribe to receive messages related to that specific topic.
  
 <div class="tutorial-image-container">
 ![Topic](../img/topic.png)
@@ -28,7 +31,7 @@ There is a standard format of the MQTT topics for sending data from devices to t
 ```
 biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
-Here it will be important to put the data you obtained from excel correctly. In CUSTOMER-ID you will have to write the id of the Customer Id that you have in the excel you obtain before, in device id, the Device Id that you have also obtained and you have in excel, publish/data leave it the same.
+Here it will be important to put the data you obtained from excel correctly.The part of biotz/1/0/ you should leave it as it is in the standard. In CUSTOMER-ID you will have to write the id of the Customer Id that you have in the excel you obtain before, in DEVICE-ID, the Device Id that you have also obtained and you have in the excel, publish/data you shouldn't change it, leave it as it is in the example.
 
 To know what to write in MESSAGE-TYPE-INTERNAL-NAME, you have to go to app.biotz.io and data ingestion flow, enter the name of the device type that you are using and look at the internal name that corresponds to it, that will be what you will have to write in topic. 
 
@@ -40,17 +43,18 @@ To know what to write in MESSAGE-TYPE-INTERNAL-NAME, you have to go to app.biotz
 </div>
 
 
-The topic should look something like this
+The topic should look something like this:
 ```
 biotz/1/0/805c2316-81c9-4cdd-aca5-c09eb2a79f35/09bdb2bc-991b-4c35-8a91-df1f6fe71f4d/publish/data/temp_lumin
 ```
 
-To send the message, first you will have to know the format in which you will have to send the message, for that you will have to go back to data ingestion flow and select the device type you are using and look at its attributes.
+To send the message, first you will have to know the format in which you will have to send the message, for that you will have to go back to **data ingestion flow** and select the **device type** you are using This will bring you to a tab that will display the attributes:
 
 <div class="tutorial-image-container">
 ![Message](../img/attributes.png)
 </div>
-After looking at the attributes, you have to write the correct JSON payload between the braces. The message would be something like this.
+After looking at the attributes, you have to write the correct JSON payload between the braces. The message would look something like this. Depending on the attributes you need to use. 
+
 <div class="tutorial-image-container">
 ![Message](../img/2-message.png)
 </div>
@@ -64,24 +68,24 @@ You will return to app.biotz.io, this time you will enter in developer tools, an
 ![box](../img/two-pieces.png)
 </div>
 
-In select device, write the name with which we have sent the message and in the select message type the type of message that you have configured, in this case, temp-lumin.
+In select device, type the name of the device you created before and in the select message type the type of message that you have configured, in this case, temp-lumin.
 
-If you have sent the message you will see this:
-
+If the message has been sent correctly to the device you wanted, this is what should appear:
 <div class="tutorial-image-container">
 ![box](../img/correct-message.png)
 </div>
-As we can see if everything went well, the message will have been sent correctly and you will see something like this, the green circle will indicate that the message is correct, that means the format of the message is correct.
+As we can see if everything went well, the message will have been sent correctly and you will see something like this, the green circle will indicate that the message is correct, that means that you have sent the JSON payload with the correct format and that there is no error.
 
 ## Incorrect message
 Now let's modify something in the payload to send the message incorrectly to see the difference.
 
-You will need to replace what was inside the braces with this JSON payload:
+Instead of "temperature", let's type "temperatura" and see how it changes.
+If you have changed "temperature" to "temperatura", now the message you are going to send should look like this:
+
 <div class="tutorial-image-container">
 ![Message](../img/1-message.png)
 </div>
 
-Instead of "temperature", let's type "temperatura" and see how it changes.
 <div class="tutorial-image-container">
 ![Message](../img/incorrect-message.png)
 </div>
