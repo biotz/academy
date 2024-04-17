@@ -22,7 +22,7 @@ For this demonstration, we'll focus on a JSON format. We'll provide examples of 
 
 ## Correct message
 To send the message, you will have to modify the topic, the topic is a string that is used to identify the destination of a message. It serves as a kind of address or channel to which the message is sent and to which other users can subscribe to receive messages related to that specific topic.
- 
+
 <div class="tutorial-image-container">
 ![Topic](../img/topic.png)
 </div>
@@ -33,7 +33,7 @@ biotz/1/0/CUSTOMER-ID/DEVICE-ID/publish/data/MESSAGE-TYPE-INTERNAL-NAME
 ```
 Here it will be important to put the data you obtained from excel correctly.The part of biotz/1/0/ you should leave it as it is in the standard. In CUSTOMER-ID you will have to write the id of the Customer Id that you have in the excel you obtain before, in DEVICE-ID, the Device Id that you have also obtained and you have in the excel, publish/data you shouldn't change it, leave it as it is in the example.
 
-To know what to write in MESSAGE-TYPE-INTERNAL-NAME, you have to go to app.biotz.io and data ingestion flow, enter the name of the device type that you are using and look at the internal name that corresponds to it, that will be what you will have to write in topic. 
+To know what to write in MESSAGE-TYPE-INTERNAL-NAME, you have to go to app.biotz.io and data ingestion flow, enter the name of the device type that you are using and look at the internal name that corresponds to it, that will be what you will have to write in topic.
 
 <div class="tutorial-image-container">
 ![Message](../img/internal-name1.png)
@@ -53,12 +53,12 @@ To send the message, first you will have to know the format in which you will ha
 <div class="tutorial-image-container">
 ![Message](../img/attributes.png)
 </div>
-After looking at the attributes, you have to write the correct JSON payload between the braces. The message would look something like this. Depending on the attributes you need to use. 
+After looking at the attributes, you have to write the correct JSON payload between the braces. The message would look something like this. Depending on the attributes you need to use.
 
 <div class="tutorial-image-container">
 ![Message](../img/2-message.png)
 </div>
-After all this, you can send the message with the green button below. 
+After all this, you can send the message with the green button below.
 <div class="tutorial-image-container">
 ![box](../img/green-button.png)
 </div>

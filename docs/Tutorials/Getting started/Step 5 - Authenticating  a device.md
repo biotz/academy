@@ -19,7 +19,6 @@ However in order to call the **http-forwarder** service you have to identify you
 
 With that information you can craft an HTTP request for this simulation to get the token. In this tutorial, it is assumed you have some experience working the terminal. As said at the beginning of this tutorial, **HTTPie** and **cURL** tools will be used to provide examples for HTTP requests. Here is the request to retrieve the token using both tools (please make sure to adjust the request with your own credentials):
 
-	
 ```bash title="HTTPie"
 http --form POST \
 https://auth.biotz.io/realms/biotz-platform/protocol/openid-connect/token \
@@ -27,7 +26,7 @@ username=~HTTP USER FROM CSV~ \
 password=~PASSWORD FROM CSV~ \
 grant_type=password \
 client_id=biotz-platform-devices \
-scope=openid 
+scope=openid
 ```
 <br></br>
 

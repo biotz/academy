@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-sidebar_label: Step 1 - Creating a Device Type 
+sidebar_label: Step 1 - Creating a Device Type
 ---
 # Creating a Device Type
 
-Before we start sending and ingesting data you have to configure your Biotz account to be able to know **who** is sending data and **how** to process it. The first step is to create a Device Type, which will allow you to categorise your devices. Assuming you have signed in into the application, from the sidebar, in the **Setup** section, click on **Device Type**.  
+Before we start sending and ingesting data you have to configure your Biotz account to be able to know **who** is sending data and **how** to process it. The first step is to create a Device Type, which will allow you to categorise your devices. Assuming you have signed in into the application, from the sidebar, in the **Setup** section, click on **Device Type**.
 
 <div class="tutorial-image-container">
     ![Device type](../../../docs/Tutorials/img/device-type.png)
@@ -18,7 +18,7 @@ You will be presented with the following page:
 
 
 If you haven’t created any Device Type yet this table should be empty. Now, on the top right corner of the table click on New Device Type. Once you have done, you will have to fill a few details about the device type such as name and optionally description as can been seen in the image below:
- 
+
 <div class="tutorial-image-container">
     ![Create New](../../../docs/Tutorials/img/create-new.png)
 </div>

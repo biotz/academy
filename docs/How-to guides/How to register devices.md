@@ -23,7 +23,7 @@ Biotz offers two ways to register devices:
 
 Follow the steps:
 
-- From the lateral menu navigate to 'Device management - Devices'. 
+- From the lateral menu navigate to 'Device management - Devices'.
 - At the right side top of this new view there will be a button that says 'New device'.
 - That will present the form for the device registration.
 
@@ -46,7 +46,7 @@ Follow the steps:
     - From the lateral menu navigate to 'Device management - Devices'.
     - At the right side top of this new view there will be a button that says 'Create devices form CSV'.
     - That will present the form for the device registration.
-    - 
+    -
 <div class="tutorial-image-container">
 ![Using the CSV way](img/using-csv-way.png)
 </div>

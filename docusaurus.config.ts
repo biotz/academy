@@ -17,11 +17,11 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'biotz', // Usually your GitHub org/user name.
   projectName: 'academy', // Usually your repo name.
-  
+
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  
+
   trailingSlash: false,
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -79,14 +79,15 @@ const config: Config = {
           position: 'left',
           label: 'Examples',
         },
-        
-        {href: 'https://www.biotz.io/company/blog', label: 'Blog', position: 'left'},
         {
-          
+          href: 'https://www.biotz.io/company/blog',
+          label: 'Blog',
+          position: 'left'},
+        {
           href: 'https://www.biotz.io/contact-us',
           label: 'Contact us',
           position: 'right',
-          className: 'boton-navbar' 
+          className: 'boton-navbar'
         },
       ],
     },
@@ -98,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: `hello@biotz.io
-              Biotz SL              
+              Biotz SL
               B-75081794`,
               href: 'mailto:hello@biotz.io?subject=Website%20contact!',
             },
@@ -108,13 +109,12 @@ const config: Config = {
           title: 'Head Office',
           items: [
             {
-              label:  
+              label:
               `Santa Marina 3
-               20560 Oñati               
+               20560 Oñati
               (Guipúzcoa) Spain`,
               href: 'mailto:asier.galdos@biotz.io?subject=Website%20contact!',
             },
-          
           ],
         },
         {
@@ -127,7 +127,6 @@ const config: Config = {
           ],
         },
       ],
-      
       copyright: `© ${new Date().getFullYear()} Biotz Academy. All Rights Reserved.`,
     },
     prism: {

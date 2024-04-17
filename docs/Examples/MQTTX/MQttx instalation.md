@@ -3,7 +3,7 @@ sidebar_position: 2
 sidebar_label: MQTTX instalation
 ---
 
-To install MQTTX, first, Visit the official MQTTX [website](https://mqttx.app/) and select the download button and you will be sent to a page. 
+To install MQTTX, first, Visit the official MQTTX [website](https://mqttx.app/) and select the download button and you will be sent to a page.
 
 Choose your operating system: On the download page, identify your operating system
 (Windows, macOS, Linux) and download the appropriate installer.
@@ -34,7 +34,7 @@ Run the following command to update the list of available packages:
 sudo apt update
 ```
 
-### Install dependencies: 
+### Install dependencies:
 MQTTX might require additional libraries to function properly. Use this
 command to install them:
 

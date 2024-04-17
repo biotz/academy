@@ -14,7 +14,7 @@
   --ifm-color-primary-light: #16113e;
   --ifm-color-primary-lighter: #171140;
   --ifm-color-primary-lightest: #1a1449;
-  
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(20, 15, 56, 0.1);
 }
@@ -31,11 +31,11 @@
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;  
+  --ifm-color-primary-lightest: #4fddbf;
   --ifm-font-color-base: #ffffff;
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  
+
   /* Estilos específicos para el título y el tagline en modo oscuro */
 }
 

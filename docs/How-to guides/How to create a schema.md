@@ -61,7 +61,7 @@ These are the descriptions of each of the parameters of an item:
 <div class="tutorial-image-container">
 ![parameters](img/parameters.png)
 </div>
-  
+
 Timestamp ones, the same as the rest with an extra one:
 
     - Payload timestamp?: to be marked if this is the timestamp Biotz should use for the time series date mark.

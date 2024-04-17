@@ -5,7 +5,7 @@ sidebar_label: Step 4 - Creating a device
 # Creating a device
 
 Before sending any data you need to register a device. To do so, from the sidebar, in the **Device Management** section, click on **Devices**. This will show up a list of devices. In the top right corner you click on **New device**. You will see the following form:
-            
+
 <div class="tutorial-image-container">
 ![New Device](../../../docs/Tutorials/img/new-device.png)
 </div>

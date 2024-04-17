@@ -6,7 +6,7 @@ services:
       - '3000:3000/tcp'
     volumes:
       - '.:/app'
-    command: 
+    command:
       - npm
       - run
       - start-dev

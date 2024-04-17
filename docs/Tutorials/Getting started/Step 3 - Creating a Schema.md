@@ -34,7 +34,7 @@ There is a new element on the screen now named Key name. It is a special propert
 &nbsp;
 - **Key name: hum**
 
-- **Item name: humidity**  
+- **Item name: humidity**
 &nbsp;
 
 You might have noticed that to your right there are two checkboxes:

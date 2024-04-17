@@ -18,7 +18,7 @@ The alarm trigger will apply to all the devices of a certain device type no matt
 
 ## Alarm definition
 
-The alarm triggers are defined in the “Alarm triggers” subsection under the “Setup” section. 
+The alarm triggers are defined in the “Alarm triggers” subsection under the “Setup” section.
 <br></br>
 
 \<screenshot>
@@ -34,8 +34,8 @@ Defining an alarm requires three steps: general options, rule definition and not
 
 The following fields have to be completed:
 
-- Name: an identifier for the trigger. This name will be displayed in the triggered alarm list and notifications. 
-- Level: the criticality or severity of the alarm. The possible values are: alert, critical, emergency, info and warning. 
+- Name: an identifier for the trigger. This name will be displayed in the triggered alarm list and notifications.
+- Level: the criticality or severity of the alarm. The possible values are: alert, critical, emergency, info and warning.
 - Device type: the device type for which the alarm trigger will be evaluated. The trigger will apply to all the devices of a certain type.
 - Message type: the message type that will be used to define the trigger rule. The trigger will only be evaluated when the devices send data for the selected message type.
 

@@ -6,7 +6,7 @@ sidebar_label: How to invite users
 # How to invite users
 ## Introduction
 
-Organization administrators can invite new users to their organization. 
+Organization administrators can invite new users to their organization.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ New users are created from the user list view. The list can be accessed from 'Us
 <div class="tutorial-image-container">
 ![Invite New User](img/invite-new-user.png)
 </div>
-There, new users can be created using the “Add new user” button. 
+There, new users can be created using the “Add new user” button.
 
 <div class="tutorial-image-container">
 ![Add new user](img/add-user.png)

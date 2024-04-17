@@ -46,6 +46,6 @@ Enter the connection details such as the connection name, the MQTT server addres
 </div>
 <div class="tutorial-image-container">
 ![configuration](../img/configuration2.png)
-</div> 
+</div>
 Once you have configured everything correctly, click "Save" or "Connect" to save the configuration and establish the connection.
 Once you are connected, you can **post** messages to a specific topic or **subscribe** to a topic to receive messages.
