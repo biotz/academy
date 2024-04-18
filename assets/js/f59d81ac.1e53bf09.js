@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkacademy=self.webpackChunkacademy||[]).push([[4246],{7035:e=>{e.exports=JSON.parse('{"title":"MQTTX","slug":"/category/mqttx","permalink":"/docs/category/mqttx","navigation":{"previous":{"title":"Examples","permalink":"/docs/category/examples"},"next":{"title":"Intro","permalink":"/docs/Examples/MQTTX/Intro"}}}')}}]);
