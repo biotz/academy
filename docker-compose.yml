@@ -7,6 +7,6 @@ services:
     volumes:
       - '.:/app'
     command:
-      - npm
-      - run
-      - start-dev
+      - bash
+      - -c
+      - "npm install --maxsocket 1 && npm start"
