@@ -4,7 +4,7 @@ sidebar_label: Postman instalation
 ---
 
 
-**Install Postman in Ubuntu:**
+## Install Postman in Ubuntu:
 ```
 sudo snap install postman
 ```
@@ -63,7 +63,7 @@ This deletes the compressed file that was unpacked in step 2.
 
 These steps guide you through the process of installing and setting up Postman on your Linux system.
 
-**To install Postman on Windows, follow these steps:**
+## To install Postman on Windows, follow these steps:
 
 **Download the Postman installer:** Visit the official Postman website at getpostman.com and download the Postman installer for Windows.
 
@@ -82,7 +82,7 @@ These steps guide you through the process of installing and setting up Postman o
 
 And that's it! You should now have Postman installed and ready to use on your Windows computer.
 
-**To install Postman on macOS, follow these steps:**
+## To install Postman on macOS, follow these steps:
 
 **Download the Postman installer:** Visit the official Postman website at getpostman.com and download the Postman installer for macOS.
 

@@ -28,6 +28,7 @@ http --auth-type bearer \
 POST https://ingestion-http.biotz.io/api/device/publish/data/mytestmessag \
 hum=20.5 temp=25.6
 ```
-Then, you have to change the username and password for the excel data, where it says "\~HTTP USER FROM CSV~", you must write the http username of your CSV, and where it says "\~PASSWORD FROM CSV~" what it is in the password of the CSV. If you are in the test enviroment, in the link, instead of auth.biotz.io you should put auth.test.biotz.io. 
+Then, you have to change the username and password for the excel data, where it says "\~HTTP USER FROM CSV~", you must write the http username of your CSV, and where it says "\~PASSWORD FROM CSV~" what it is in the password of the CSV.
 
-Now, if you have done everything correctly by pressing enter, you should see three different tokens, and at the bottom, the token type. 
+Now, if you have done everything correctly by pressing enter, you should see three different tokens in the terminal, and at the bottom of the terminal, the token type. 
+The token you will need to the authorization, is the id_token.

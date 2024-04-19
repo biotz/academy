@@ -6,7 +6,7 @@ sidebar_label: How to create Developer API credentials
 
 ## Introduction
 
-To create applications that consume our data we have a Developer API, following <a href="https://api.test.biotz.io/docs/ui/index.html#/" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
+To create applications that consume our data we have a Developer API, following <a href="https://api.biotz.io/docs/ui/index.html#/" target="_self">this link</a> you will be able to consult more information about the endpoints in our documentation.
 
 ## Credentials creation
 
