@@ -60,7 +60,7 @@ biotz/1/0/805c2316-81c9-4cdd-aca5-c09eb2a79f35/09bdb2bc-991b-4c35-8a91-df1f6fe71
 
 To send the message, first you will have know the message type and the schema you are going to use to send the message. 
 
-For that, you will have to go back to **data ingestion flow** and select the **device type** you are using. This will bring you to a tab that, on the left will display you the message type and one the right, all the schemas for that message type, 
+For that, you will have to go back to **data ingestion flow** and select the **device type** you are using. This will bring you to a tab that, on the left will display you the message type and on the right, all the schemas for that message type, 
 
 <div class="tutorial-image-container">
 ![Message](../img/schemas.png)

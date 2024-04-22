@@ -15,10 +15,10 @@ In the postman application, you will have something like this above:
 
 Add a new request by clicking, the "+" icon. 
 
-Then, you will need to introduce the http url that you want to do the request, in this case the url would similar to this:
+Then, you will need to introduce the http url that you want to do the request, in this case the url would be similar to this:
 
 ```
-https://ingestion-http.biotz.io/api/device/publish/data/ \
+https://ingestion-http.biotz.io/api/device/publish/data/mytestmessag \
 ```
 
 Remember, that where it is "mytestmessag \" , you will have to enter the name of your own message type, to see that you should go back to app.biotz.io and in data ingestion flow, there search for your device type.
@@ -100,7 +100,7 @@ Now you can go back to app.biotz.io to check if the request has been sent correc
 
 For that you will have to go to back to app.biotz.io.
 
-Now you need to enter on **developer tools** and inside developer tools one the **communication debugger**, there will be two spaces to fill, in the first one you will have to choose the device that you have created, and in the second one, the device type that you have used.
+Now you need to enter on **developer tools** and inside developer tools on the **communication debugger**, there will be two spaces to fill, in the first one you will have to choose the device that you have created, and in the second one, the device type that you have used.
 
 <div class="tutorial-image-container">
 ![icon](../img/two-pieces.png)
