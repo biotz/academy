@@ -45,9 +45,9 @@ Name the panel and optionally set a description.
 
 (make this type dependent)
 
-**Time series**
+### Time series
 
-###### Query builder
+##### Query builder
 
 The query builder is used to define which data will the panel display.  The x-axis will always be the time, and the y axis will contain one or more time-series lines. Each line is defined by an independent query.
 <br></br>
@@ -67,7 +67,7 @@ Defining a query requires the following configuration:
 
 The reason for aggregating the data is performance. Lets say a certain device is sending data observations every second, and the user wants to display the data of a whole month. That would result in 2,678,400 data points. Displaying so many data points would be technically impossible for the browser because of the limited amount of pixels that a screen can display. Also, it would be very CPU heavy. To avoid that, the dashboard panel aggregates data to adapt to the screen size and chosen zoom level.
 
-###### Appearance
+##### Appearance
 
 <div class="tutorial-image-container">
 ![appearance](img/appearance.png)
@@ -83,9 +83,9 @@ The following appearance related options are available:
 - Marker symbol
 - Enable/disable legend
 
-##### Gauge
+### Gauge
 
-###### Query builder
+##### Query builder
 
 The query builder is used to define which data will the gauge display. A gauge shows the aggregation of a certain device message-type attribute in the selected time-frame period.
 
@@ -104,7 +104,7 @@ Defining the query requires the following configuration:
 - Text: Count, first and last.
 ‍
 
-###### Appearance
+##### Appearance
 The following appearance related options are available:
 
 - Min value
@@ -114,12 +114,11 @@ The following appearance related options are available:
 - Percentage
 - Color
 
-##### Pie chart
+### Pie chart
 
-###### Query builder
+##### Query builder
 The query builder is used to define which data will the pie chart display. Each segment of the pie is defined by an independent query that displays the aggregation of a certain device message type attribute.
 
-‍
 
 Defining the query requires the following configuration:
 
@@ -129,14 +128,14 @@ Defining the query requires the following configuration:
 - Aggregation method. The data for the selected device and attribute will be aggregated using this method. Note that the special “first” and “last” aggregation methods are also available that show a single data point.
 ‍
 
-##### Attribute type and Available aggregation methods
+#### Attribute type and Available aggregation methods
 
 - Numeric: Count, maximum, minimum, mean, standard deviation, sum, first and last.
 - Boolean: Count, first and last.
 - Text: Count, first and last.
 ‍
 
-###### Appearance
+#### Appearance
 The following appearance related options are available:
 
 - Enable/disable legend
@@ -146,8 +145,9 @@ The following appearance related options are available:
 - Color
 ‍
 
-##### State chart
-###### Query builder
+### State chart
+
+#### Query builder
 The query builder is used to define which data will the state chart display. Each chart can show the data from one variable.
 
 ‍
@@ -166,7 +166,7 @@ Defining the query requires the following configuration:
 - Text: Count, first and last.
 ‍
 
-###### Appearance
+##### Appearance
 The following appearance related options are available:
 - Enable/disable value with unit marker.
 - Conditions for different styles, applies the first that's true
@@ -175,9 +175,9 @@ The following appearance related options are available:
 
 
 
-##### Device map
+### Device map
 
-###### Query builder
+##### Query builder
 
 The query builder is used to define which data will the device map show. 
 
