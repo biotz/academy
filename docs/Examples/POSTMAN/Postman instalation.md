@@ -4,38 +4,41 @@ sidebar_label: Postman instalation
 ---
 
 
-## Install Postman in Ubuntu:
-```
-sudo snap install postman
-```
+### Install Postman in Ubuntu
 
-This command installs Postman using the Snap package manager.
+You can install Postman on Ubuntu using either the snap package or the tar.gz archive. Here are the steps for each method:
 
-**Extract the installation archive:**
+#### Method 1: Using Snap (Recommended)
+This method installs Postman in a single step.
 
-```
-tar -xzf Postman-linux-x64-5.3.2.tar.gz
-```
+1. Open your terminal.
+2. Run the following command:
+    ```bash
+    sudo snap install postman
+    ```
 
-This command unpacks the downloaded Postman archive file.
+#### Method 2: Using tar.gz Archive
+This method involves downloading, extracting, and setting up Postman manually.
 
-**Remove any previous version (optional):**
-```
-sudo rm -rf /opt/Postman
-```
-This removes any previous version of Postman that may exist in the /opt/Postman directory.
+1. Open your terminal.
+2. Download the latest Postman archive:
+    ```bash
+    wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+    ```
+3. Extract the downloaded archive:
+    ```bash
+    tar -xzf postman.tar.gz
+    ```
+4. Move the extracted Postman directory to `/opt`:
+    ```bash
+    sudo mv Postman /opt/Postman
+    ```
+5. Create a symbolic link to make Postman accessible from anywhere:
+    ```bash
+    sudo ln -s /opt/Postman/Postman /usr/bin/postman
+    ```
 
-**Move Postman to a specific directory:**
-```
-sudo mv Postman /opt/Postman
-```
-It moves the extracted Postman folder to the /opt/Postman directory.
-
-**Create a symbolic link:**
-```
-sudo ln -s /opt/Postman/Postman /usr/bin/postman
-```
-This creates a symbolic link so you can easily run Postman from the command line using the postman command.
+Both methods will successfully install Postman on your system. Choose the method that best suits your preference.
 
 **Create a desktop launcher file:**
 ```

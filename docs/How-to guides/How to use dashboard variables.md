@@ -25,7 +25,9 @@ The variables are created from the dashboard edition view. For that click on the
 Creating a variable only requires specifying a name and selecting a device-type.
 <br></br>
 
-The dashboard variables are always device-type specific to ensure that all the selectable devices are compatible with the dashboard panel queries in which the variable is used.
+The dashboard variables are always device-type specific to ensure that all the selectable devices are compatible with the dashboard panel queries in which the variable is used. 
+
+When entering the device type, the panels that use this variable will use this device by default. But in the dashboard toolbar you can select any other device of the same type, and display the data of that other device instead. 
 
 <div class="tutorial-image-container">
 ![Documentation Dasboard](img/documentation-dashboard.png)

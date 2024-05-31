@@ -30,7 +30,7 @@ When clicking on “create” an empty dashboard is created.
 A dashboard is composed of one or more panels. To create a new one use the “New panel” button and select the type of panel to create.
 <br></br>
 
-At the moment the available panel types are the following: time-series, pie chart and gauge.
+At the moment the available panel types are the following: time-series, pie chart, gauge and device map.
 
 <div class="tutorial-image-container">
     ![Creating panels](img/creating-panels.png)
@@ -172,3 +172,23 @@ The following appearance related options are available:
 - Conditions for different styles, applies the first that's true
 - Color
 - Text to display
+
+
+
+##### Device map
+
+###### Query builder
+
+The query builder is used to define which data will the device map show. 
+
+**Query Builder Functionality**:
+
+- In the query builder, you can first choose the type of device or have the option to select all devices. If you choose to select a specific device, you can name the type of device.
+- In the appearance section, you cannot make any changes because The appearance of the panel cannot be configured.
+
+**Device Type Selection**:
+- After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.
+ 
+
+‍
+

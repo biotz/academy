@@ -9,10 +9,10 @@ Now that you have a token from Biotz Identity Provider, it is time to send actua
 <br></br>
 For the request to be accepted by the **http-forwarder** it needs three things:
 - The **id_token**.
-- The message type **internal name** for your device. This should be **mytestmessag** if you have been following this tutorial.
+- The message type **internal name** for your device. This should be **mytestmessage** if you have been following this tutorial.
 - Request **payload**. This is your device’s data. The payload should have the shape/structure of the schema you defined previously. That means, an **Object** containing the keys **hum**, **temp** and **time**.
 
-In this case the **Object** is an JSON object since the **mytestmessag** definition was configured with the **JSON** encoding.
+In this case the **Object** is an JSON object since the **mytestmessage** definition was configured with the **JSON** encoding.
 
 <br></br>
 Now, the request is very simple, you will send just a single sample of data (a single request in this case) to the platform. Here is an example using both HTTPie and cURL.
@@ -20,7 +20,7 @@ Now, the request is very simple, you will send just a single sample of data (a s
 ```bash title="HTTPie"
 http --auth-type bearer \
 --auth ~YOUR ID_TOKEN~ \
-POST https://ingestion-http.biotz.io/api/device/publish/data/mytestmessag \
+POST https://ingestion-http.biotz.io/api/device/publish/data/mytestmessage \
 hum=20.5 temp=25.6
 ```
 <br></br>
