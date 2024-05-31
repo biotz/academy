@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">How to create a dashboard | Biotz Academy</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://academy.biotz.io/docs/How-to guides/How to create a dashboard"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="How to create a dashboard | Biotz Academy"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard" hreflang="en"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.28ac8546.css">
-<script src="/assets/js/runtime~main.81c31071.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.759000b5.js" defer="defer"></script>
 <script src="/assets/js/main.1a20904f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -28,8 +28,8 @@
 <br>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration">Configuration<a href="#configuration" class="hash-link" aria-label="Direct link to Configuration" title="Direct link to Configuration">​</a></h3>
 <p>(make this type dependent)</p>
-<p><strong>Time series</strong></p>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder">Query builder<a href="#query-builder" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h6>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="time-series">Time series<a href="#time-series" class="hash-link" aria-label="Direct link to Time series" title="Direct link to Time series">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder">Query builder<a href="#query-builder" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
 <p>The query builder is used to define which data will the panel display.  The x-axis will always be the time, and the y axis will contain one or more time-series lines. Each line is defined by an independent query.</p>
 <br>
 <p>Defining a query requires the following configuration:</p>
@@ -46,7 +46,7 @@
 </ul>
 <br>
 <p>The reason for aggregating the data is performance. Lets say a certain device is sending data observations every second, and the user wants to display the data of a whole month. That would result in 2,678,400 data points. Displaying so many data points would be technically impossible for the browser because of the limited amount of pixels that a screen can display. Also, it would be very CPU heavy. To avoid that, the dashboard panel aggregates data to adapt to the screen size and chosen zoom level.</p>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="appearance">Appearance<a href="#appearance" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h6>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance">Appearance<a href="#appearance" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
 <div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/appearance-12c7bb21cf25f28de36f919329a9886c.png" width="1210" height="613" class="img_ev3q"></p></div>
 <p>The following appearance related options are available:</p>
 <ul>
@@ -59,8 +59,8 @@
 <li>Marker symbol</li>
 <li>Enable/disable legend</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="gauge">Gauge<a href="#gauge" class="hash-link" aria-label="Direct link to Gauge" title="Direct link to Gauge">​</a></h5>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-1">Query builder<a href="#query-builder-1" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h6>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="gauge">Gauge<a href="#gauge" class="hash-link" aria-label="Direct link to Gauge" title="Direct link to Gauge">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-1">Query builder<a href="#query-builder-1" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
 <p>The query builder is used to define which data will the gauge display. A gauge shows the aggregation of a certain device message-type attribute in the selected time-frame period.</p>
 <p>Defining the query requires the following configuration:</p>
 <ul>
@@ -76,7 +76,7 @@
 <li>Text: Count, first and last.
 ‍</li>
 </ul>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-1">Appearance<a href="#appearance-1" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h6>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-1">Appearance<a href="#appearance-1" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
 <p>The following appearance related options are available:</p>
 <ul>
 <li>Min value</li>
@@ -86,10 +86,9 @@
 <li>Percentage</li>
 <li>Color</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="pie-chart">Pie chart<a href="#pie-chart" class="hash-link" aria-label="Direct link to Pie chart" title="Direct link to Pie chart">​</a></h5>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-2">Query builder<a href="#query-builder-2" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h6>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pie-chart">Pie chart<a href="#pie-chart" class="hash-link" aria-label="Direct link to Pie chart" title="Direct link to Pie chart">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-2">Query builder<a href="#query-builder-2" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
 <p>The query builder is used to define which data will the pie chart display. Each segment of the pie is defined by an independent query that displays the aggregation of a certain device message type attribute.</p>
-<p>‍</p>
 <p>Defining the query requires the following configuration:</p>
 <ul>
 <li>Selecting a device or device variable. Each pie segment can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable
@@ -98,14 +97,14 @@
 <li>Aggregation method. The data for the selected device and attribute will be aggregated using this method. Note that the special “first” and “last” aggregation methods are also available that show a single data point.
 ‍</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="attribute-type-and-available-aggregation-methods-1">Attribute type and Available aggregation methods<a href="#attribute-type-and-available-aggregation-methods-1" class="hash-link" aria-label="Direct link to Attribute type and Available aggregation methods" title="Direct link to Attribute type and Available aggregation methods">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="attribute-type-and-available-aggregation-methods-1">Attribute type and Available aggregation methods<a href="#attribute-type-and-available-aggregation-methods-1" class="hash-link" aria-label="Direct link to Attribute type and Available aggregation methods" title="Direct link to Attribute type and Available aggregation methods">​</a></h4>
 <ul>
 <li>Numeric: Count, maximum, minimum, mean, standard deviation, sum, first and last.</li>
 <li>Boolean: Count, first and last.</li>
 <li>Text: Count, first and last.
 ‍</li>
 </ul>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-2">Appearance<a href="#appearance-2" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h6>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-2">Appearance<a href="#appearance-2" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h4>
 <p>The following appearance related options are available:</p>
 <ul>
 <li>Enable/disable legend</li>
@@ -115,8 +114,8 @@
 <li>Color
 ‍</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="state-chart">State chart<a href="#state-chart" class="hash-link" aria-label="Direct link to State chart" title="Direct link to State chart">​</a></h5>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-3">Query builder<a href="#query-builder-3" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h6>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="state-chart">State chart<a href="#state-chart" class="hash-link" aria-label="Direct link to State chart" title="Direct link to State chart">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-3">Query builder<a href="#query-builder-3" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h4>
 <p>The query builder is used to define which data will the state chart display. Each chart can show the data from one variable.</p>
 <p>‍</p>
 <p>Defining the query requires the following configuration:</p>
@@ -133,7 +132,7 @@
 <li>Text: Count, first and last.
 ‍</li>
 </ul>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-3">Appearance<a href="#appearance-3" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h6>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-3">Appearance<a href="#appearance-3" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
 <p>The following appearance related options are available:</p>
 <ul>
 <li>Enable/disable value with unit marker.</li>
@@ -141,8 +140,8 @@
 <li>Color</li>
 <li>Text to display</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="device-map">Device map<a href="#device-map" class="hash-link" aria-label="Direct link to Device map" title="Direct link to Device map">​</a></h5>
-<h6 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-4">Query builder<a href="#query-builder-4" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h6>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="device-map">Device map<a href="#device-map" class="hash-link" aria-label="Direct link to Device map" title="Direct link to Device map">​</a></h3>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-4">Query builder<a href="#query-builder-4" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
 <p>The query builder is used to define which data will the device map show.</p>
 <p><strong>Query Builder Functionality</strong>:</p>
 <ul>
@@ -153,7 +152,7 @@
 <ul>
 <li>After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.</li>
 </ul>
-<p>‍</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/How-to guides/How to configure and trigger a remote action in devices"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">How to configure and trigger a remote action in devices</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/How-to guides/How to use dashboard variables"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">How to use dashboard variables</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#creating-a-dashboard" class="table-of-contents__link toc-highlight">Creating a dashboard</a></li><li><a href="#creating-panels" class="table-of-contents__link toc-highlight">Creating panels</a><ul><li><a href="#general-information" class="table-of-contents__link toc-highlight">General information</a></li><li><a href="#configuration" class="table-of-contents__link toc-highlight">Configuration</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">General</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:hello@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">hello@biotz.io
+<p>‍</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/How-to guides/How to configure and trigger a remote action in devices"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">How to configure and trigger a remote action in devices</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/How-to guides/How to use dashboard variables"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">How to use dashboard variables</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#creating-a-dashboard" class="table-of-contents__link toc-highlight">Creating a dashboard</a></li><li><a href="#creating-panels" class="table-of-contents__link toc-highlight">Creating panels</a><ul><li><a href="#general-information" class="table-of-contents__link toc-highlight">General information</a></li><li><a href="#configuration" class="table-of-contents__link toc-highlight">Configuration</a></li><li><a href="#time-series" class="table-of-contents__link toc-highlight">Time series</a></li><li><a href="#gauge" class="table-of-contents__link toc-highlight">Gauge</a></li><li><a href="#pie-chart" class="table-of-contents__link toc-highlight">Pie chart</a></li><li><a href="#state-chart" class="table-of-contents__link toc-highlight">State chart</a></li><li><a href="#device-map" class="table-of-contents__link toc-highlight">Device map</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">General</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:hello@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">hello@biotz.io
               Biotz SL
               B-75081794<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Head Office</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:asier.galdos@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">Santa Marina 3
                20560 Oñati
