@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">Message-type Schema specification | Biotz Academy</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://academy.biotz.io/docs/Reference guides/Message-type Schema specification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Message-type Schema specification | Biotz Academy"><meta data-rh="true" name="description" content="This is the specification for the schema of a message-type. The users will have to specify a device-type, with one to many message-type. Each message-type will have one to many schemas."><meta data-rh="true" property="og:description" content="This is the specification for the schema of a message-type. The users will have to specify a device-type, with one to many message-type. Each message-type will have one to many schemas."><link data-rh="true" rel="icon" href="/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://academy.biotz.io/docs/Reference guides/Message-type Schema specification"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/Reference guides/Message-type Schema specification" hreflang="en"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/Reference guides/Message-type Schema specification" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.28ac8546.css">
-<script src="/assets/js/runtime~main.759000b5.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.89f242a0.js" defer="defer"></script>
 <script src="/assets/js/main.1a20904f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -12,16 +12,203 @@
 <p>This is the specification for the schema of a message-type. The users will have to specify a device-type, with one to many message-type. Each message-type will have one to many schemas.</p>
 <p>This schema is the structure of the data that the device will be sending in each communication with Biotz. The definition provided in the schema creation in the web application is the one used to validate the incoming data. Also, this will be used to structure the specific database schema for the data to be stored in a structured way.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="supported-data-types">Supported data types in Message-Types<a href="#supported-data-types" class="hash-link" aria-label="Direct link to Supported data types in Message-Types" title="Direct link to Supported data types in Message-Types">​</a></h2>
-<p>At the moment Biotz offers support to a subset of MessagePack data types that are compatible with JSON format.</p>
-<table><thead><tr><th>Displayed in UI</th><th><a href="https://json-schema.org/draft/2020-12/json-schema-core#name-instance-data-model" target="_blank" rel="noopener noreferrer">JSON Schema</a> equivalent</th><th><a href="https://msgpack.org/" target="_blank" rel="noopener noreferrer">MessagePack</a> equivalent</th><th>DB column type</th><th>Examples (in JSON syntax)</th></tr></thead><tbody><tr><td><a href="#unix-timestamp-as-integer">Unix timestamp, as integer</a></td><td>number</td><td>int</td><td>timestamp</td><td><code>1712828630000</code></td></tr><tr><td><a href="#unix-timestamp-as-text">Unix timestamp, as text</a></td><td>string</td><td>string</td><td>timestamp</td><td><code>&quot;1712828630000&quot;</code></td></tr><tr><td><a href="#unix-timestamp-rfc-3339">Unix timestamp RFC-3339</a></td><td>string</td><td>string</td><td>timestamp</td><td><code>&quot;2024-04-11T11:44:36.123Z&quot;</code></td></tr><tr><td><a href="#integer">Integer</a></td><td>number</td><td>int</td><td>integer</td><td><code>12345678</code></td></tr><tr><td><a href="#integer-as-text">Integer, as text</a></td><td>string</td><td>string</td><td>integer</td><td><code>&quot;12345678&quot;</code></td></tr><tr><td><a href="#integer-as-hexadecimal-text">Integer, as hexadecimal text</a></td><td>string</td><td>string</td><td>integer</td><td><code>&quot;3a2fbb589d&quot;</code></td></tr><tr><td><a href="#decimal">Decimal</a></td><td>number</td><td>float</td><td>real</td><td><code>12345.678</code></td></tr><tr><td><a href="#decimal-as-text">Decimal, as text</a></td><td>string</td><td>string</td><td>real</td><td><code>&quot;12345.678&quot;</code></td></tr><tr><td><a href="#text">Text</a></td><td>string</td><td>string</td><td>text</td><td><code>&quot;Some value&quot;</code></td></tr><tr><td><a href="#boolean">Boolean</a></td><td>boolean</td><td>boolean</td><td>boolean</td><td><code>true</code>, <code>false</code></td></tr><tr><td><a href="#boolean-as-text">Boolean, as text</a></td><td>string</td><td>string</td><td>boolean</td><td><code>&quot;true&quot;</code>, <code>&quot;false&quot;</code></td></tr><tr><td><a href="#boolean-as-integer">Boolean, as integer</a></td><td>number</td><td>int</td><td>boolean</td><td><code>0</code>, <code>1</code></td></tr><tr><td><a href="#object">Object</a></td><td>object</td><td>map</td><td>N/A</td><td><code>{&quot;key1&quot;: 1, &quot;key2&quot;: &quot;val&quot;}</code></td></tr><tr><td><a href="#collection-of-identical-items">Collection of identical items</a></td><td>array (all elements are of the same type)</td><td>array (all elements are of the same type)</td><td>N/A</td><td><code>[1, 2, 3]</code> <br> <code>[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code></td></tr><tr><td><a href="#collection-of-unrelated-items">Collection of unrelated items</a></td><td>array (each elements can be of a different type)</td><td>array (each elements can be of a different type)</td><td>N/A</td><td><code>[1, &quot;a&quot;, [2 3]]</code></td></tr></tbody></table>
-<p>Additional information about some of the data types above:</p>
+<p>At the moment Biotz offers support to a subset of MessagePack data types that are compatible with JSON format. See <a href="#data-types-detailed-specification">Data types detailed specification</a> below for additional details on each data type, or click on the individual data type names in the &quot;Displayed in the UI&quot; column.</p>
+<p>The &quot;DB Column Type&quot; specifies the data type of the value stored in the database, once it has received and validated.</p>
+<table><thead><tr><th>Displayed in UI</th><th><a href="https://json-schema.org/draft/2020-12/json-schema-core#name-instance-data-model" target="_blank" rel="noopener noreferrer">JSON Schema</a> equivalent</th><th><a href="https://msgpack.org/" target="_blank" rel="noopener noreferrer">MessagePack</a> equivalent</th><th>DB Column Type</th><th>Examples (in JSON syntax)</th></tr></thead><tbody><tr><td><a href="#unix-timestamp-as-integer">Unix timestamp, as integer</a></td><td>number</td><td>int 64</td><td>timestamp</td><td><code>1712828630000</code></td></tr><tr><td><a href="#unix-timestamp-as-text">Unix timestamp, as text</a></td><td>string</td><td>string</td><td>timestamp</td><td><code>&quot;1712828630000&quot;</code></td></tr><tr><td><a href="#unix-timestamp-rfc-3339">Unix timestamp RFC-3339</a></td><td>string</td><td>string</td><td>timestamp</td><td><code>&quot;2024-04-11T11:44:36.123Z&quot;</code></td></tr><tr><td><a href="#integer">Integer</a></td><td>number</td><td>int 32</td><td>integer</td><td><code>12345678</code></td></tr><tr><td><a href="#integer-as-text">Integer, as text</a></td><td>string</td><td>string</td><td>integer</td><td><code>&quot;12345678&quot;</code></td></tr><tr><td><a href="#integer-as-hexadecimal-text">Integer, as hexadecimal text</a></td><td>string</td><td>string</td><td>integer</td><td><code>&quot;3a2fbb589d&quot;</code></td></tr><tr><td><a href="#decimal">Decimal</a></td><td>number</td><td>float 64</td><td>double</td><td><code>12345.678</code></td></tr><tr><td><a href="#decimal-as-text">Decimal, as text</a></td><td>string</td><td>string</td><td>double</td><td><code>&quot;12345.678&quot;</code></td></tr><tr><td><a href="#text">Text</a></td><td>string</td><td>string</td><td>text</td><td><code>&quot;Some value&quot;</code></td></tr><tr><td><a href="#boolean">Boolean</a></td><td>boolean</td><td>bool</td><td>boolean</td><td><code>true</code>, <code>false</code></td></tr><tr><td><a href="#boolean-as-text">Boolean, as text</a></td><td>string</td><td>string</td><td>boolean</td><td><code>&quot;true&quot;</code>, <code>&quot;false&quot;</code></td></tr><tr><td><a href="#boolean-as-integer">Boolean, as integer</a></td><td>number</td><td>int</td><td>boolean</td><td><code>0</code>, <code>1</code></td></tr><tr><td><a href="#object">Object</a></td><td>object</td><td>map</td><td>N/A</td><td><code>{&quot;key1&quot;: 1, &quot;key2&quot;: &quot;val&quot;}</code></td></tr><tr><td><a href="#collection-of-identical-items">Collection of identical items</a></td><td>array (all elements are of the same type)</td><td>array (all elements are of the same type)</td><td>N/A</td><td><code>[1, 2, 3]</code> <br> <code>[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code></td></tr><tr><td><a href="#collection-of-unrelated-items">Collection of unrelated items</a></td><td>array (each elements can be of a different type)</td><td>array (each elements can be of a different type)</td><td>N/A</td><td><code>[1, &quot;a&quot;, [2 3]]</code></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-types-detailed-specification">Data types detailed specification<a href="#data-types-detailed-specification" class="hash-link" aria-label="Direct link to Data types detailed specification" title="Direct link to Data types detailed specification">​</a></h2>
+<p>The table shown in the <a href="#supported-data-types">Supported data types in Message-Types</a> section only shows a brief summary of the different data types, including some basic examples to help intuit their main properties. But it lacks a detailed specification of the properties of each data type, and the constraints enforce by Biotz on those data types (if any). This section describes in greater detail, for each of the supported types, what those properties and constraints are.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-timestamp-as-integer">Unix timestamp, as integer<a href="#unix-timestamp-as-integer" class="hash-link" aria-label="Direct link to Unix timestamp, as integer" title="Direct link to Unix timestamp, as integer">​</a></h3>
+<p>Biotz &quot;Unix timestamp as integer&quot; data type is a <strong>64</strong> bits signed integer value (signed long). Be aware that if you are JSON as the data encoding method, the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER#description" target="_blank" rel="noopener noreferrer">maximum and minimum integer values that can be safely represented</a> are smaller than what this data type supports.</p>
+<p>It is based on the <a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank" rel="noopener noreferrer">Unix time</a> concept (commonly called Unix timestamp), in that it measures an offset from the Unix epoch. But there are two important differences from the standard Unix timestamp definition:</p>
+<ul>
+<li>The standard Unix timestamp uses the second as the unit of measure (although many systems allow fractions of seconds, if represented as a floating point number), while Biotz &quot;Unix timestamp, as integer&quot; uses milliseconds as the unit of measure. Thus the value <code>12345</code> means 12345 seconds after the Unix epoch if using Standard Unix timestamps, but it means 1.2345 seconds after the epoch if using Biotz Unix timestamps.</li>
+<li>The standard Unix timestamp uses a 32 bits signed integer value, which means that it will roll over after 2038-01-19T03:14:07Z (known as the <a href="https://en.wikipedia.org/wiki/Year_2038_problem" target="_blank" rel="noopener noreferrer">Year 2038 problem</a>). Biotz &quot;Unix timestamp, as integer&quot;, being 64 bits long, does not have such a problem even if the unit of measure is the millisecond.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples">Examples<a href="#examples" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li>The value <code>1705491207432</code> corresponds to the <code>2024-01-17T12:33:27.432Z</code> date and time (expressed in ISO-8601 UTC format).</li>
+<li>The value <code>2456444847987</code> corresponds to the <code>2047-11-04T02:47:27.987Z</code> date and time (again in ISO-8601 UTC).</li>
+<li>The value <code>-2119381953432</code> corresponds to the <code>1902-11-04T02:47:27.432Z</code> date and time (again in ISO-8601 UTC).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-timestamp-as-text">Unix timestamp, as text<a href="#unix-timestamp-as-text" class="hash-link" aria-label="Direct link to Unix timestamp, as text" title="Direct link to Unix timestamp, as text">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Unix timestamp, as text&quot; data type has the same properties as the <a href="#unix-timestamp-as-integer">Unix timestamp, as integer</a> data type.</p>
+<p>The differences with the <a href="#unix-timestamp-as-integer">Unix timestamp, as integer</a> data type are:</p>
+<ul>
+<li>The value is represented as a string of decimal digits, instead of as an actual (64 bits) signed integer number.</li>
+<li>The value must represent a valid integer number. That is, an optional leading negative sign, followed by decimal digits only. With no leading or trailing white space.</li>
+<li>There are limits on the minimum and maximum number of digits that the value can use:<!-- -->
+<ul>
+<li>The minimum number of digits is 1.</li>
+<li>The maximum number of digits is 20.</li>
+</ul>
+</li>
+<li>The represented value must fint in a 64 bits signed integer.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-1">Examples<a href="#examples-1" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li>The value <code>&quot;1705491207432&quot;</code> corresponds to the <code>2024-01-17T12:33:27.432Z</code> date and time (expressed in ISO-8601 UTC format).</li>
+<li>The value <code>&quot;2456444847987&quot;</code> corresponds to the <code>2047-11-04T02:47:27.987Z</code> date and time (again in ISO-8601 UTC).</li>
+<li>The value <code>&quot;-2119381953432&quot;</code> corresponds to the <code>1902-11-04T02:47:27.432Z</code> date and time (again in ISO-8601 UTC).</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="unix-timestamp-rfc-3339">Unix timestamp RFC-3339<a href="#unix-timestamp-rfc-3339" class="hash-link" aria-label="Direct link to Unix timestamp RFC-3339" title="Direct link to Unix timestamp RFC-3339">​</a></h3>
+<p>Biotz &quot;Unix timestamp RFC-3339&quot; data type is a string value, whose content must conform to <a href="https://www.rfc-editor.org/rfc/rfc3339" target="_blank" rel="noopener noreferrer">RFC-3339: Date and Time on the Internet: Timestamps</a>. In particular, it must comply with the ABNF grammar specified in <a href="https://www.rfc-editor.org/rfc/rfc3339#section-5.6" target="_blank" rel="noopener noreferrer">Section 5.6: Internet Date/Time Format</a>. It must also comply with the restrictions stated <a href="https://www.rfc-editor.org/rfc/rfc3339#section-5.7" target="_blank" rel="noopener noreferrer">Section 5.7: Restrictions</a>, with the additional restriction that <code>&quot;Z&quot;</code> is the only <code>time-offset</code> value accepted by Biotz. That is, only UTC time are accepted.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-2">Examples<a href="#examples-2" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;1985-04-12T23:20:50.52Z&quot;</code></li>
+<li><code>&quot;2039-01-01T00:00:00Z&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integer">Integer<a href="#integer" class="hash-link" aria-label="Direct link to Integer" title="Direct link to Integer">​</a></h3>
+<p>32 bits signed integers.</p>
+<p>Biotz &quot;Integer&quot; data type is a <strong>32</strong> bits signed integer value (signed int). Thus, the minimum possible value is <code>-2147483648</code> and the maximum possible value is <code>2147483647</code>).</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-3">Examples<a href="#examples-3" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>123</code></li>
+<li><code>-34567</code></li>
+<li><code>-2147483648</code></li>
+<li><code>2147483647</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integer-as-text">Integer, as text<a href="#integer-as-text" class="hash-link" aria-label="Direct link to Integer, as text" title="Direct link to Integer, as text">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Integer, as text&quot; data type has the same properties as the <a href="#integer">Integer</a> data type.</p>
+<p>The differences with the <a href="#integer">Integer</a> data type are:</p>
+<ul>
+<li>The value is represented as a string of decimal digits, instead of as an actual (32 bits) signed integer number.</li>
+<li>The value must represent a valid integer number. That is, an optional leading negative sign, followed by decimal digits only. With no leading or trailing white space.</li>
+<li>There are limits on the minimum and maximum number of digits that the value can use:<!-- -->
+<ul>
+<li>The minimum number of digits is 1.</li>
+<li>The maximum number of digits is 10.</li>
+</ul>
+</li>
+<li>The represented value must fit in a 32 bits signed integer value.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-4">Examples<a href="#examples-4" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;123&quot;</code></li>
+<li><code>&quot;-34567&quot;</code></li>
+<li><code>&quot;-2147483648&quot;</code></li>
+<li><code>&quot;2147483647&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integer-as-hexadecimal-text">Integer, as hexadecimal text<a href="#integer-as-hexadecimal-text" class="hash-link" aria-label="Direct link to Integer, as hexadecimal text" title="Direct link to Integer, as hexadecimal text">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Integer, as hexadecimal text&quot; data type has the same properties as the <a href="#integer">Integer</a> data type.</p>
+<p>The differences with the <a href="#integer">Integer</a> data type are:</p>
+<ul>
+<li>The value is represented as a string of hexadecimal digits.</li>
+<li>The value must represent a valid hexadecimal number. That is, an optional <code>0x</code> prefix (using a lower case <code>x</code> is mandatory), followed by hexadecimal digits only. With no leading or trailing white space. The hexadecimal can be upper or lower case.</li>
+<li>There are limits on the minimum and maximum number of digits that the value can use:<!-- -->
+<ul>
+<li>The minimum number of hexadecimal digits is 1.</li>
+<li>The maximum number of hexadecimal digits is 8.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-5">Examples<a href="#examples-5" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;0xaabbccdd&quot;</code></li>
+<li><code>&quot;aabbccdd&quot;</code></li>
+<li><code>&quot;0xA&quot;</code></li>
+<li><code>&quot;A&quot;</code></li>
+<li><code>&quot;a&quot;</code></li>
+<li><code>&quot;0A&quot;</code></li>
+<li><code>&quot;0a&quot;</code></li>
+<li><code>&quot;0x1234aAbB&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="decimal">Decimal<a href="#decimal" class="hash-link" aria-label="Direct link to Decimal" title="Direct link to Decimal">​</a></h3>
+<p>Biotz &quot;Decimal&quot; data type is a <code>binary64</code> (double precision) floating point value, as specified in the <a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format" target="_blank" rel="noopener noreferrer">IEEE 754 standard</a>.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-6">Examples<a href="#examples-6" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>0</code></li>
+<li><code>3.1415936535</code></li>
+<li><code>-2.71828182823536</code></li>
+<li><code>-13.</code></li>
+<li><code>.123456789</code></li>
+<li><code>0.123456789e23</code></li>
+<li><code>.123456789e23</code></li>
+<li><code>-0.123456789e-23</code></li>
+<li><code>-.123456789e-23</code></li>
+<li><code>-13.e23</code></li>
+<li><code>1234</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="decimal-as-text">Decimal, as text<a href="#decimal-as-text" class="hash-link" aria-label="Direct link to Decimal, as text" title="Direct link to Decimal, as text">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Decimal, as text&quot; data type has the same properties as the <a href="#decimal">Decimal</a> data type.</p>
+<p>The differences with the <a href="#decimal">Decimal</a> data type are:</p>
+<ul>
+<li>The value is represented as a string of digits, with an optional sign, and optional fractional part</li>
+<li>The value can only use decimal digits. Hexadecimal digits are not supported.</li>
+<li>The value must not contain leading or trailing white space.</li>
+<li>There are limits on the minimum and maximum number of digits that the value can use:<!-- -->
+<ul>
+<li>The maximum number of decimal digits for the fractional part is 18.</li>
+<li>The maximum number of decimal digits for the integral (non-fractional) part is 309.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-7">Examples<a href="#examples-7" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;0&quot;</code></li>
+<li><code>&quot;3.1415936535&quot;</code></li>
+<li><code>&quot;-2.71828182823536&quot;</code></li>
+<li><code>&quot;-13.&quot;</code></li>
+<li><code>&quot;.123456789&quot;</code></li>
+<li><code>&quot;0.123456789e23&quot;</code></li>
+<li><code>&quot;.123456789e23&quot;</code></li>
+<li><code>&quot;-0.123456789e-23&quot;</code></li>
+<li><code>&quot;-.123456789e-23&quot;</code></li>
+<li><code>&quot;-13.e23&quot;</code></li>
+<li><code>&quot;1234&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="text">Text<a href="#text" class="hash-link" aria-label="Direct link to Text" title="Direct link to Text">​</a></h3>
+<p>Biotz &quot;Text&quot; data type is a string value, containing valid UTF-8 code points. The maximum length of the value is 256 Kilobytes.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-8">Examples<a href="#examples-8" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;This is a text value&quot;</code></li>
+<li><code>&quot;Este también es un texto válido áéíóúäëïöü 😇👩🎂 ¯\_(ツ)_/¯&quot;</code></li>
+<li><code>&quot;&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boolean">Boolean<a href="#boolean" class="hash-link" aria-label="Direct link to Boolean" title="Direct link to Boolean">​</a></h3>
+<p>Biotz &quot;Boolean&quot; data type is the standard JSON or MessagePack boolean data type.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-9">Examples<a href="#examples-9" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>true</code></li>
+<li><code>false</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boolean-as-text">Boolean, as text<a href="#boolean-as-text" class="hash-link" aria-label="Direct link to Boolean, as text" title="Direct link to Boolean, as text">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Boolean, as text&quot; data type has the same properties as the <a href="#boolean">Boolean</a> data type.</p>
+<p>The differences with the <a href="#boolean">Boolean</a> data type are:</p>
+<ul>
+<li>The value is represented as a string.</li>
+<li>The value must not contain leading or trailing white space.</li>
+<li>The value must be either <code>&quot;true&quot;</code> or `&quot;false&quot;. Lower case, upper case or mixed-case values are accepted.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-10">Examples<a href="#examples-10" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>&quot;true&quot;</code></li>
+<li><code>&quot;false&quot;</code></li>
+<li><code>&quot;True&quot;</code></li>
+<li><code>&quot;False&quot;</code></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="boolean-as-integer">Boolean, as integer<a href="#boolean-as-integer" class="hash-link" aria-label="Direct link to Boolean, as integer" title="Direct link to Boolean, as integer">​</a></h3>
+<p>Except for the differences noted below, Biotz &quot;Boolean, as integer&quot; data type has the same properties as the <a href="#boolean">Boolean</a> data type.</p>
+<p>The differences with the <a href="#boolean">Boolean</a> data type are:</p>
+<ul>
+<li>The value is represented as a 32 bits signed integer value.</li>
+<li>If the signed integer value is equal to 0, then it is considered <code>false</code>.</li>
+<li>If the signed integer value is not equal to 0, then it is considered <code>true</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-11">Examples<a href="#examples-11" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
+<ul>
+<li><code>0</code> (considered <code>false</code>)</li>
+<li><code>000</code>  (considered <code>false</code>)</li>
+<li><code>255</code> (considered <code>true</code>)</li>
+<li><code>-16384</code> (considered <code>true</code>)</li>
+</ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="object">Object<a href="#object" class="hash-link" aria-label="Direct link to Object" title="Direct link to Object">​</a></h3>
 <p>Object / Map / Dictionary: They are containers of the final properties, as the Collections-related type. In this case, we only expect key-value pairs as children elements that are like following:</p>
 <ul>
 <li>Keys can only be of type `String` (in order to give support for JSON serialization format).</li>
-<li>Values cannot be of type `Collection of…` or `Object` type, as we do not support nesting properties in that way.</li>
+<li>Values cannot be of type `Collection of...` or `Object` type, as we do not support nesting properties in that way.</li>
 </ul>
 <p>Null values: we can handle them in any format to be transformed to `nil` Clojure values.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-12">Examples<a href="#examples-12" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="collection-of-identical-items">Collection of identical items<a href="#collection-of-identical-items" class="hash-link" aria-label="Direct link to Collection of identical items" title="Direct link to Collection of identical items">​</a></h3>
 <p>This data type is similar to JSON and Message pack arrays. It is an ordered collection of items. But contrary to regular JSON and MessagePack arrays, a <em>Collection of identical items</em> has some additional constraints enforced by Biotz:</p>
 <ul>
@@ -29,8 +216,10 @@
 <li>The child item data type can only be either a <a href="#collection-of-unrelated-items">Collection of unrelated items</a>, or an <a href="#object">Object</a></li>
 </ul>
 <p>This constraints may seem a bit strange at first sight. But the use case for this data type is actually quite widespread. If you have a device that measures and stores the same set of values (e.g., temperature and humidity for a given timestamp), and then sends a bunch of such values together as an array of maps, where all of those maps have the same set of key names (e.g, <code>&quot;timestamp&quot;</code>, <code>&quot;temperature&quot;</code> and <code>&quot;humidity&quot;</code>), then you need this data type.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-13">Examples<a href="#examples-13" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="collection-of-unrelated-items">Collection of unrelated items<a href="#collection-of-unrelated-items" class="hash-link" aria-label="Direct link to Collection of unrelated items" title="Direct link to Collection of unrelated items">​</a></h3>
-<p>Collection of unrelated items: collection of any kind of item, present just once.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Reference guides/Glossary"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Glossary</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Reference guides/Developer API"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Developer API</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-data-types" class="table-of-contents__link toc-highlight">Supported data types in Message-Types</a><ul><li><a href="#object" class="table-of-contents__link toc-highlight">Object</a></li><li><a href="#collection-of-identical-items" class="table-of-contents__link toc-highlight">Collection of identical items</a></li><li><a href="#collection-of-unrelated-items" class="table-of-contents__link toc-highlight">Collection of unrelated items</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">General</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:hello@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">hello@biotz.io
+<p>Collection of unrelated items: collection of any kind of item, present just once.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="examples-14">Examples<a href="#examples-14" class="hash-link" aria-label="Direct link to Examples" title="Direct link to Examples">​</a></h4></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Reference guides/Glossary"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Glossary</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Reference guides/Developer API"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Developer API</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-data-types" class="table-of-contents__link toc-highlight">Supported data types in Message-Types</a></li><li><a href="#data-types-detailed-specification" class="table-of-contents__link toc-highlight">Data types detailed specification</a><ul><li><a href="#unix-timestamp-as-integer" class="table-of-contents__link toc-highlight">Unix timestamp, as integer</a></li><li><a href="#unix-timestamp-as-text" class="table-of-contents__link toc-highlight">Unix timestamp, as text</a></li><li><a href="#unix-timestamp-rfc-3339" class="table-of-contents__link toc-highlight">Unix timestamp RFC-3339</a></li><li><a href="#integer" class="table-of-contents__link toc-highlight">Integer</a></li><li><a href="#integer-as-text" class="table-of-contents__link toc-highlight">Integer, as text</a></li><li><a href="#integer-as-hexadecimal-text" class="table-of-contents__link toc-highlight">Integer, as hexadecimal text</a></li><li><a href="#decimal" class="table-of-contents__link toc-highlight">Decimal</a></li><li><a href="#decimal-as-text" class="table-of-contents__link toc-highlight">Decimal, as text</a></li><li><a href="#text" class="table-of-contents__link toc-highlight">Text</a></li><li><a href="#boolean" class="table-of-contents__link toc-highlight">Boolean</a></li><li><a href="#boolean-as-text" class="table-of-contents__link toc-highlight">Boolean, as text</a></li><li><a href="#boolean-as-integer" class="table-of-contents__link toc-highlight">Boolean, as integer</a></li><li><a href="#object" class="table-of-contents__link toc-highlight">Object</a></li><li><a href="#collection-of-identical-items" class="table-of-contents__link toc-highlight">Collection of identical items</a></li><li><a href="#collection-of-unrelated-items" class="table-of-contents__link toc-highlight">Collection of unrelated items</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">General</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:hello@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">hello@biotz.io
               Biotz SL
               B-75081794<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Head Office</div><ul class="footer__items clean-list"><li class="footer__item"><a href="mailto:asier.galdos@biotz.io?subject=Website%20contact!" target="_blank" rel="noopener noreferrer" class="footer__link-item">Santa Marina 3
                20560 Oñati
