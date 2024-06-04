@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.2.1">
 <title data-rh="true">How to create a dashboard | Biotz Academy</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://academy.biotz.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://academy.biotz.io/docs/How-to guides/How to create a dashboard"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="How to create a dashboard | Biotz Academy"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/img/favicon.svg"><link data-rh="true" rel="canonical" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard" hreflang="en"><link data-rh="true" rel="alternate" href="https://academy.biotz.io/docs/How-to guides/How to create a dashboard" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.28ac8546.css">
-<script src="/assets/js/runtime~main.89f242a0.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.72f1e528.js" defer="defer"></script>
 <script src="/assets/js/main.1a20904f.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -46,7 +46,8 @@
 </ul>
 <br>
 <p>The reason for aggregating the data is performance. Lets say a certain device is sending data observations every second, and the user wants to display the data of a whole month. That would result in 2,678,400 data points. Displaying so many data points would be technically impossible for the browser because of the limited amount of pixels that a screen can display. Also, it would be very CPU heavy. To avoid that, the dashboard panel aggregates data to adapt to the screen size and chosen zoom level.</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance">Appearance<a href="#appearance" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/query-builder-time-series-bddd971e0a35d433ace8721861687447.png" width="1162" height="462" class="img_ev3q"></p></div>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="appearance">Appearance<a href="#appearance" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h4>
 <div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/appearance-12c7bb21cf25f28de36f919329a9886c.png" width="1210" height="613" class="img_ev3q"></p></div>
 <p>The following appearance related options are available:</p>
 <ul>
@@ -60,8 +61,9 @@
 <li>Enable/disable legend</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="gauge">Gauge<a href="#gauge" class="hash-link" aria-label="Direct link to Gauge" title="Direct link to Gauge">​</a></h3>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-1">Query builder<a href="#query-builder-1" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-1">Query builder<a href="#query-builder-1" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h4>
 <p>The query builder is used to define which data will the gauge display. A gauge shows the aggregation of a certain device message-type attribute in the selected time-frame period.</p>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/query-builder-gauge-a8b95a5cb9cf5bca0e31fb40a2bd9d07.png" width="1162" height="462" class="img_ev3q"></p></div>
 <p>Defining the query requires the following configuration:</p>
 <ul>
 <li>Selecting a device or device variable. Each gauge can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see <a href="./How to use dashboard variables" target="_self">this</a> for more info).</li>
@@ -76,7 +78,7 @@
 <li>Text: Count, first and last.
 ‍</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-1">Appearance<a href="#appearance-1" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-1">Appearance<a href="#appearance-1" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h4>
 <p>The following appearance related options are available:</p>
 <ul>
 <li>Min value</li>
@@ -86,9 +88,11 @@
 <li>Percentage</li>
 <li>Color</li>
 </ul>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/appearance-gauge-840e14449c4e81361c2e1995628f9b00.png" width="1152" height="299" class="img_ev3q"></p></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pie-chart">Pie chart<a href="#pie-chart" class="hash-link" aria-label="Direct link to Pie chart" title="Direct link to Pie chart">​</a></h3>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-2">Query builder<a href="#query-builder-2" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-2">Query builder<a href="#query-builder-2" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h4>
 <p>The query builder is used to define which data will the pie chart display. Each segment of the pie is defined by an independent query that displays the aggregation of a certain device message type attribute.</p>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/query-builder-pie-chart-40b85d3548fd3637e7d2f15e33986bfc.png" width="1162" height="462" class="img_ev3q"></p></div>
 <p>Defining the query requires the following configuration:</p>
 <ul>
 <li>Selecting a device or device variable. Each pie segment can show the data of a single device. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable
@@ -114,10 +118,11 @@
 <li>Color
 ‍</li>
 </ul>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/appearance-pie-chart-2de0d52a02b4fefdb8ff5697b1111735.png" width="1152" height="299" class="img_ev3q"></p></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="state-chart">State chart<a href="#state-chart" class="hash-link" aria-label="Direct link to State chart" title="Direct link to State chart">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-3">Query builder<a href="#query-builder-3" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h4>
 <p>The query builder is used to define which data will the state chart display. Each chart can show the data from one variable.</p>
-<p>‍</p>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/query-builder-state-chart-1bfe6c538aece965dba410358f263839.png" width="1162" height="462" class="img_ev3q"></p></div>
 <p>Defining the query requires the following configuration:</p>
 <ul>
 <li>Selecting a device or device variable. The device to be used can be fixed and defined at panel creation time, or determined by a dashboard variable (see <a href="./How to use dashboard variables" target="_self">this</a> for more info).</li>
@@ -132,7 +137,7 @@
 <li>Text: Count, first and last.
 ‍</li>
 </ul>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-3">Appearance<a href="#appearance-3" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="appearance-3">Appearance<a href="#appearance-3" class="hash-link" aria-label="Direct link to Appearance" title="Direct link to Appearance">​</a></h4>
 <p>The following appearance related options are available:</p>
 <ul>
 <li>Enable/disable value with unit marker.</li>
@@ -140,15 +145,18 @@
 <li>Color</li>
 <li>Text to display</li>
 </ul>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="appearance" src="/assets/images/appearance-state-chart-bb2c541fda01a18ca96f91cfa4c98a74.png" width="1164" height="362" class="img_ev3q"></p></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="device-map">Device map<a href="#device-map" class="hash-link" aria-label="Direct link to Device map" title="Direct link to Device map">​</a></h3>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-4">Query builder<a href="#query-builder-4" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h5>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-4">Query builder<a href="#query-builder-4" class="hash-link" aria-label="Direct link to Query builder" title="Direct link to Query builder">​</a></h4>
 <p>The query builder is used to define which data will the device map show.</p>
-<p><strong>Query Builder Functionality</strong>:</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="query-builder-functionality">Query Builder Functionality:<a href="#query-builder-functionality" class="hash-link" aria-label="Direct link to Query Builder Functionality:" title="Direct link to Query Builder Functionality:">​</a></h5>
+<div class="tutorial-image-container"><p><img decoding="async" loading="lazy" alt="Creating panels" src="/assets/images/query-builder-device-map-28de35f7a0a6bafea5becce573256993.png" width="1162" height="462" class="img_ev3q"></p></div>
+<p>Defining the query requires the following configuration:</p>
 <ul>
 <li>In the query builder, you can first choose the type of device or have the option to select all devices. If you choose to select a specific device, you can name the type of device.</li>
 <li>In the appearance section, you cannot make any changes because The appearance of the panel cannot be configured.</li>
 </ul>
-<p><strong>Device Type Selection</strong>:</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="device-type-selection">Device Type Selection:<a href="#device-type-selection" class="hash-link" aria-label="Direct link to Device Type Selection:" title="Direct link to Device Type Selection:">​</a></h5>
 <ul>
 <li>After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.</li>
 </ul>
