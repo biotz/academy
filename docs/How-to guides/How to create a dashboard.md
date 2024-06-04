@@ -66,8 +66,11 @@ Defining a query requires the following configuration:
 <br></br>
 
 The reason for aggregating the data is performance. Lets say a certain device is sending data observations every second, and the user wants to display the data of a whole month. That would result in 2,678,400 data points. Displaying so many data points would be technically impossible for the browser because of the limited amount of pixels that a screen can display. Also, it would be very CPU heavy. To avoid that, the dashboard panel aggregates data to adapt to the screen size and chosen zoom level.
+<div class="tutorial-image-container">
+![appearance](img/query-builder-time-series.png)
+</div>
 
-##### Appearance
+#### Appearance
 
 <div class="tutorial-image-container">
 ![appearance](img/appearance.png)
@@ -85,10 +88,13 @@ The following appearance related options are available:
 
 ### Gauge
 
-##### Query builder
+#### Query builder
 
 The query builder is used to define which data will the gauge display. A gauge shows the aggregation of a certain device message-type attribute in the selected time-frame period.
 
+<div class="tutorial-image-container">
+![appearance](img/query-builder-gauge.png)
+</div>
 
 Defining the query requires the following configuration:
 
@@ -104,7 +110,8 @@ Defining the query requires the following configuration:
 - Text: Count, first and last.
 ‍
 
-##### Appearance
+
+#### Appearance
 The following appearance related options are available:
 
 - Min value
@@ -114,11 +121,18 @@ The following appearance related options are available:
 - Percentage
 - Color
 
+<div class="tutorial-image-container">
+![appearance](img/appearance-gauge.png)
+</div>
+
 ### Pie chart
 
-##### Query builder
+#### Query builder
 The query builder is used to define which data will the pie chart display. Each segment of the pie is defined by an independent query that displays the aggregation of a certain device message type attribute.
 
+<div class="tutorial-image-container">
+![appearance](img/query-builder-pie-chart.png)
+</div>
 
 Defining the query requires the following configuration:
 
@@ -144,13 +158,18 @@ The following appearance related options are available:
 - Display name
 - Color
 ‍
+<div class="tutorial-image-container">
+![appearance](img/appearance-pie-chart.png)
+</div>
 
 ### State chart
 
 #### Query builder
 The query builder is used to define which data will the state chart display. Each chart can show the data from one variable.
 
-‍
+<div class="tutorial-image-container">
+![appearance](img/query-builder-state-chart.png)
+</div>
 
 Defining the query requires the following configuration:
 
@@ -166,27 +185,36 @@ Defining the query requires the following configuration:
 - Text: Count, first and last.
 ‍
 
-##### Appearance
+
+#### Appearance
 The following appearance related options are available:
 - Enable/disable value with unit marker.
 - Conditions for different styles, applies the first that's true
 - Color
 - Text to display
 
-
+<div class="tutorial-image-container">
+![appearance](img/appearance-state-chart.png)
+</div>
 
 ### Device map
 
-##### Query builder
+#### Query builder
 
 The query builder is used to define which data will the device map show. 
 
-**Query Builder Functionality**:
+##### Query Builder Functionality:
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/query-builder-device-map.png)
+</div>
+
+Defining the query requires the following configuration:
 
 - In the query builder, you can first choose the type of device or have the option to select all devices. If you choose to select a specific device, you can name the type of device.
 - In the appearance section, you cannot make any changes because The appearance of the panel cannot be configured.
 
-**Device Type Selection**:
+##### Device Type Selection:
 - After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.
  
 

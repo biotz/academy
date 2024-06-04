@@ -47,3 +47,8 @@ For that, click on the â€œVariable, select a variable defined in the dashboardâ€
 </div>
 
 The dashboard variable is now ready to use. Changing the device in the dashboard view will update the corresponding panels.
+
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/finish.png)
+</div>
