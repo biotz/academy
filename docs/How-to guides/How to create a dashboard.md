@@ -218,5 +218,11 @@ Defining the query requires the following configuration:
 - After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.
  
 
+
+ After creating one of these panels, you should select the dashboard for which you have created the panel, and you should see all the panels you have created for that dashboard The panels vary depending on the type of panel and its configuration.
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/panels.png)
+</div>
 ‍
 
