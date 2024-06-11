@@ -86,6 +86,13 @@ The following appearance related options are available:
 - Marker symbol
 - Enable/disable legend
 
+This woul be an example of a time series panel:
+
+
+<div class="tutorial-image-container">
+![appearance](img/time-series.png)
+</div>
+
 ### Gauge
 
 #### Query builder
@@ -125,6 +132,12 @@ The following appearance related options are available:
 ![appearance](img/appearance-gauge.png)
 </div>
 
+This would be an exaple of a gauge panel:
+
+<div class="tutorial-image-container">
+![appearance](img/gauge.png)
+</div>
+
 ### Pie chart
 
 #### Query builder
@@ -162,6 +175,12 @@ The following appearance related options are available:
 ![appearance](img/appearance-pie-chart.png)
 </div>
 
+This would be an example of a pie chart panel:
+
+<div class="tutorial-image-container">
+![appearance](img/pie-chart.png)
+</div>
+
 ### State chart
 
 #### Query builder
@@ -197,6 +216,11 @@ The following appearance related options are available:
 ![appearance](img/appearance-state-chart.png)
 </div>
 
+This would be an example of a state chart panel:
+
+<div class="tutorial-image-container">
+![appearance](img/stat-graph.png)
+</div>
 ### Device map
 
 #### Query builder
@@ -217,12 +241,12 @@ Defining the query requires the following configuration:
 ##### Device Type Selection:
 - After choosing the device type you want, you can save the panel, and it should appear on the dashboard with a map and the selected device types.
  
-
-
- After creating one of these panels, you should select the dashboard for which you have created the panel, and you should see all the panels you have created for that dashboard The panels vary depending on the type of panel and its configuration.
+This would be an example of a device map panel:
 
 <div class="tutorial-image-container">
-    ![Creating panels](img/panels.png)
+    ![Creating panels](img/device-map.png)
 </div>
-‍
+
+ After creating one of these panels, you should select the dashboard for which you have created the panel, and you should see all the panels you have created for that dashboard. The panels vary depending on the type of panel and its configuration.
+
 
