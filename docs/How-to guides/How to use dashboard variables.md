@@ -42,10 +42,16 @@ Once a dashboard variable is defined it can be used when defining dashboard pane
 
 For that, click on the “Variable, select a variable defined in the dashboard” in the query builder. Then select a specific variable from the list. Continue with the rest of the form as when selecting a specific device.
 
-The dashboard variable is now ready to use. Changing the device in the dashboard view will update the corresponding panels.
-
 <div class="tutorial-image-container">
     ![Creating panels](img/variable-selector.png)
+</div>
+‍
+The dashboard variable is now ready to use. Changing the device in the dashboard view will update the corresponding panels.
+
+This is what a new panel would look like using variables:
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/with-variables.png)
 </div>
 ‍
 

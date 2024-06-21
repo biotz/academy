@@ -21,12 +21,16 @@ The alarm trigger will apply to all the devices of a certain device type no matt
 The alarm triggers are defined in the “Alarm triggers” subsection under the “Setup” section.
 <br></br>
 
-\<screenshot>
+<div class="tutorial-image-container">
+    ![Creating panels](img/alarm-triggers.png)
+</div>
 
-<!-- To create the first alarm click on the “New alarm trigger” button. -->
+To create the first alarm click on the “New alarm trigger” button.If you want to create a new one you can also click on the top right hand corner.
 <br></br>
 
-\<screenshot>
+<div class="tutorial-image-container">
+    ![Creating panels](img/new-alarm-trigger.png)
+</div>
 
 Defining an alarm requires three steps: general options, rule definition and notification settings.
 
@@ -78,6 +82,8 @@ By default no users will be notified when an alarm is triggered. The triggered a
 <br></br>
 The selected users will get a web notification and an email when an alarm is triggered.
 <br></br>
-\<screenshot>
+<div class="tutorial-image-container">
+![Groups](img/select-user.png)
+</div>
 <br></br>
 To avoid overwhelming the user with notifications, a rate limit is applied to the notifications sent to the users. The users will be notified at most once every 15 minutes for each device an alarm trigger definition. Additional notifications will be ignored, but the alarm will be persisted and viewable in the alarms list.

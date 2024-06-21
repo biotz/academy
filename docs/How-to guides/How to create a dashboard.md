@@ -248,5 +248,5 @@ This would be an example of a device map panel:
 </div>
 
  After creating one of these panels, you should select the dashboard for which you have created the panel, and you should see all the panels you have created for that dashboard. The panels vary depending on the type of panel and its configuration.
-
+d
 
