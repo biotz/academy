@@ -70,24 +70,50 @@ Timestamp ones, the same as the rest with an extra one:
 ![Payload Timestamp](img/payload-timestamp.png)
 </div>
 
-### Data tranformation
+Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.
 
-This would be a data transformation functionality during ingestion, which now includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process, this will be applicable to integers and decimals.
 
-How to Use the Functionality
+## Data tranformation
+
+
+The data transformation functionality allows users to apply scaling and offsetting during data ingestion.
+Data tranfromation includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process, this will be applicable to the following item types.
+
+- Integer
+- Integer, as text
+- Integer, as hexadecimal text
+- Decimal
+- Decimal, as text
+
+#### How to use the Functionality
 
 **Step 1: Access the Ingestion Configuration**
-Navigate to the data ingestion module in the Biotz platform.
-Select the "Data Transformation" option clicking where it says "fx": will only appear on click when having selected, integer, integer as text, integer as hexadecimal text, decimal and decimal as text.
+
+To access the data ingestion flows on the Biotz platform and select the "Data Transformation" option, first, navigate to the left-hand side of the main menu on the Biotz platform and select "Setup". From there, choose "Data Ingestion Flows", then, select the appropriate device type, followed by the corresponding message type, and then click on "New Schema" to start defining a new data schema.
+
+
+Once on the schema definition screen, select the item type you want to transform, ensuring it is one of the following: integer, integer as text, integer as hexadecimal text, decimal, or decimal as text. After selecting the item type, the "fx" icon will appear next to the item name data type. Click on this icon to access the data transformation options.
+
 
 <div class="tutorial-image-container">
-    ![Creating panels](img/click-to-tranform.png)
+    ![Creating panels](img/click-to-tranform1.png)
 </div>
 
 **Step 2: Define Transformation Rules with Scale and Offset**
 
+This is what will appear when you click on the "fx" button:
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/transformation.png)
+</div>
+
 Click on "Tranformation type".
 Select the type of transformation you want to apply, you can only choose scale and offset.
+
+<div class="tutorial-image-container">
+    ![Creating panels](img/transformation-type.png)
+</div>
+
 Configure the specific parameters of the transformation.
 
 For example:
@@ -96,15 +122,17 @@ Scale: 1.5
 Offset: -2
 This means that each data value will be multiplied by 1.5 and then 2 will be subtracted.
 
+To add more transformations click on the "add tranformation" button, once the transformations are done, click on "save". Once the transformations are saved the "fx" button will show a yellow circle to show that the transformations have been applied.
+
 <div class="tutorial-image-container">
-    ![Creating panels](img/transformation.png)
+    ![Creating panels](img/click-to-tranform.png)
 </div>
 
 **Step 3: Apply Transformations**
 
 Associate the defined transformation rules with the data ingestion flow.
 
-Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.
+With this process you will be able to add data transformations for your new schema, remember that it can only be applied to the previously mentioned item types,
 
 ## Create a schema using the text editor
 
