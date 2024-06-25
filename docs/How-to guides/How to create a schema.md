@@ -77,7 +77,7 @@ Once the schema is totally represented the ‘save’ button will register the s
 
 
 The data transformation functionality allows users to apply scaling and offsetting during data ingestion.
-Data tranfromation includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process, this will be applicable to the following item types.
+Data transformation includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process, this will be applicable to the following item types.
 
 - Integer
 - Integer, as text
@@ -92,7 +92,7 @@ Data tranfromation includes advanced options such as the application of scaling 
 To access the data ingestion flows on the Biotz platform and select the "Data Transformation" option, first, navigate to the left-hand side of the main menu on the Biotz platform and select "Setup". From there, choose "Data Ingestion Flows", then, select the appropriate device type, followed by the corresponding message type, and then click on "New Schema" to start defining a new data schema.
 
 
-Once on the schema definition screen, select the item type you want to transform, ensuring it is one of the following: integer, integer as text, integer as hexadecimal text, decimal, or decimal as text. After selecting the item type, the "fx" icon will appear next to the item name data type. Click on this icon to access the data transformation options.
+Once on the schema definition screen, select the item type you want to transform, ensuring it is one of the following: integer, integer as text, integer as hexadecimal text, decimal, or decimal as text. After selecting the item type, the "fx" icon will appear next to the item name. Click on this icon to access the data transformation options.
 
 
 <div class="tutorial-image-container">
@@ -118,11 +118,15 @@ Configure the specific parameters of the transformation.
 
 For example:
 
+<div class="tutorial-image-container">
+    ![Creating panels](img/scale-offset.png)
+</div>
+
 Scale: 1.5
 Offset: -2
 This means that each data value will be multiplied by 1.5 and then 2 will be subtracted.
 
-To add more transformations click on the "add tranformation" button, once the transformations are done, click on "save". Once the transformations are saved the "fx" button will show a yellow circle to show that the transformations have been applied.
+To add more transformations click on the "add tranformation" button, once the setup is done, click on "save". Once the configuration is saved the "fx" button will show a yellow circle to show that the data transformation formulas are stored.
 
 <div class="tutorial-image-container">
     ![Creating panels](img/click-to-tranform.png)
@@ -132,7 +136,6 @@ To add more transformations click on the "add tranformation" button, once the tr
 
 Associate the defined transformation rules with the data ingestion flow.
 
-With this process you will be able to add data transformations for your new schema, remember that it can only be applied to the previously mentioned item types,
 
 ## Create a schema using the text editor
 
