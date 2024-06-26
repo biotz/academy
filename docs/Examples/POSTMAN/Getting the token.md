@@ -51,8 +51,8 @@ The token you will need to the authorization, is the id_token.
    - Navigate to the "Body" tab within the request settings.
    - Select "form-data" as the body type.
    - Add the following key-value parameters:
-     - `username`: ~HTTP USER FROM CSV~
-     - `password`: ~PASSWORD FROM CSV~
+     - `username`: HTTP USER FROM CSV
+     - `password`: PASSWORD FROM CSV
      - `grant_type`: password
      - `client_id`: biotz-platform-devices
      - `scope`: openid

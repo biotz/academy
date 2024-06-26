@@ -70,14 +70,9 @@ Timestamp ones, the same as the rest with an extra one:
 ![Payload Timestamp](img/payload-timestamp.png)
 </div>
 
-Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.
 
 
-## Data tranformation
-
-
-The data transformation functionality allows users to apply scaling and offsetting during data ingestion.
-Data transformation includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process, this will be applicable to the following item types.
+To the following item types, **data transformation** is applicable:
 
 - Integer
 - Integer, as text
@@ -85,15 +80,15 @@ Data transformation includes advanced options such as the application of scaling
 - Decimal
 - Decimal, as text
 
+The data transformation functionality allows users to apply scaling and offsetting during data ingestion.
+Data transformation includes advanced options such as the application of scaling and offsetting. This feature allows users to adjust their data more precisely during the ingestion process.
+
 #### How to use the Functionality
 
 **Step 1: Access the Ingestion Configuration**
 
-To access the data ingestion flows on the Biotz platform and select the "Data Transformation" option, first, navigate to the left-hand side of the main menu on the Biotz platform and select "Setup". From there, choose "Data Ingestion Flows", then, select the appropriate device type, followed by the corresponding message type, and then click on "New Schema" to start defining a new data schema.
-
 
 Once on the schema definition screen, select the item type you want to transform, ensuring it is one of the following: integer, integer as text, integer as hexadecimal text, decimal, or decimal as text. After selecting the item type, the "fx" icon will appear next to the item name. Click on this icon to access the data transformation options.
-
 
 <div class="tutorial-image-container">
     ![Creating panels](img/click-to-tranform1.png)
@@ -123,7 +118,9 @@ For example:
 </div>
 
 Scale: 1.5
+
 Offset: -2
+
 This means that each data value will be multiplied by 1.5 and then 2 will be subtracted.
 
 To add more transformations click on the "add tranformation" button, once the setup is done, click on "save". Once the configuration is saved the "fx" button will show a yellow circle to show that the data transformation formulas are stored.
@@ -132,9 +129,11 @@ To add more transformations click on the "add tranformation" button, once the se
     ![Creating panels](img/click-to-tranform.png)
 </div>
 
-**Step 3: Apply Transformations**
+<br>
+</br>
 
-Associate the defined transformation rules with the data ingestion flow.
+Once the schema is totally represented the ‘save’ button will register the schema. This will create the necessary machinery for the data validation and ingestion, it will also create the needed database structure for the data to be stored.
+
 
 
 ## Create a schema using the text editor
