@@ -72,9 +72,13 @@ The following are the available logical operators:
     - NOT AND: The group is considered truthy if none or some, but not all individual conditions are met
     -NOT OR: The group is considered truthy if none of the individual conditions is met.
 
-<div class="tutorial-image-container">
-![Groups](img/groups.png)
-</div>
+| CONDITION A | CONDITION B | AND | NOT AND | OR | NOT OR |
+|-----------|-----------|-----------|-----------|-----------|-----------|
+| 0 | 0 | 0 | 1 | 0 | 1 |
+| 1| 0 | 0 | 1 | 1   | 0 |
+| 0  | 1 | 0  | 1  | 1  | 0    |
+| 1  | 1  | 1   | 0 | 1  | 0  |
+
 
 Conditions and groups can be nested to build complex rules.
 ### Notifications

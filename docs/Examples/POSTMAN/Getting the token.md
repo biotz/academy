@@ -13,9 +13,10 @@ First you will have to **create a device**, to create the device, you will have 
 
 After creating the schema, you will get an excel with some important data that you will have to save for later use. 
 
-<div class="tutorial-image-container">
-![icon](../img/excell-data.png)
-</div> 
+
+| Created | Name         | Customer ID                          | Device ID                             | MQTT Username                        | HTTP Username                          | Password | Organization ID                      |
+|---------|--------------|--------------------------------------|---------------------------------------|--------------------------------------|----------------------------------------|----------|--------------------------------------|
+| Yes| test_postman | 805c2316-81c9-4cdd-aca5-c09eb2a79f35 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9@devices.data-ingestion.biotz.io|[Password]|dc4b52f7-3035-49c2-914d-946149912810 |
 
 Once you have saved all these data, you must follow a few steps to get the token.
 

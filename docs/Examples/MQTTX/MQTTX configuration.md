@@ -30,9 +30,11 @@ The information to create a device is <a href="/docs/Tutorials/Getting started/S
 
 After creating the device, you will get an excel with some data that you will have to use later, so save it!
 
-<div class="tutorial-image-container">
-![excell](../img/excell-data.png)
-</div>
+
+| Created | Name         | Customer ID                          | Device ID                             | MQTT Username                        | HTTP Username                          | Password | Organization ID                      |
+|---------|--------------|--------------------------------------|---------------------------------------|--------------------------------------|----------------------------------------|----------|--------------------------------------|
+| Yes| test_mqttx | 805c2316-81c9-4cdd-aca5-c09eb2a79f35 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9 | 7fc1bc71-b90f-49e2-8758-54cf1bfb3dc9@devices.data-ingestion.biotz.io|[Password]|dc4b52f7-3035-49c2-914d-946149912810 |
+
 
 After doing all the above mentioned process, you would have to go to the MQTTX application that you installed previously and click on the "+" icon.
 
