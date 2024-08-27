@@ -36,7 +36,7 @@ Now that we have our credentials created. We need to configure the authenticatio
 ![Developer](img/biotz-developer-api.png)
 </div>
 Clicking the **Authorize** button a pop-up will show, in which we need to add this information, also found on the
-<a href="/docs/Reference guides/Developer API" target="_self">Developer API Reference</a>.
+<a href="/docs/Reference guides/developer-api" target="_self">Developer API Reference</a>.
 
 - **Username:** The username in the credentials file we have downloaded before.
 - **Password:** The password in the credentials file we have downloaded before.
@@ -54,10 +54,3 @@ When the authorization is done correctly, you should see a pop-up saying that yo
 ![authorize2](img/authorize-2.png)
 </div>
 With this your capable of consuming the API and get the needed data.
-
-
-
-
-
-
-
