@@ -9,7 +9,7 @@ User registration is not currently available for the public. Please [contact us]
 
 Please not that In order to complete this tutorial you will need a valid email address.
 
-First navigate to the [Biotz Cloud](https://auth.biotz.io/realms/biotz-platform/protocol/openid-connect/auth?client_id=biotz-platform-spa&redirect_uri=https%3A%2F%2Fapp.biotz.io%2Foverview&state=9821fae0-b8ea-4b9f-b7f2-ebe9ad3c482c&response_mode=fragment&response_type=code&scope=openid&nonce=2063c301-fb70-4d7e-81f0-5790cefcf23f&ui_locales=en&code_challenge=bj-DokiKe4Pu4Xfta9-fhtiK1qjA8--GqPnUwWXfv1Y&code_challenge_method=S256). Once here you will be presented with the login page:
+First navigate to the [Biotz Cloud](https://app.biotz.io/). Once here you will be presented with the login page:
 
 <div class="tutorial-image-container">
     ![Sign in](../../docs/Tutorials/img/sign-in.png)
