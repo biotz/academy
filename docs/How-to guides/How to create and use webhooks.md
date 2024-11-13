@@ -64,10 +64,10 @@ From the client side, there should be validation of the webhook via the "Biotz-I
 Biotz-IoT-Signature: t=1492774577,v1=d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5,
 
 
-Where the string following `v1=` is the signed payload of the event and is created by first concatenating:
+Where the string following t= is a timestamp and the one following `v1=` is the signed payload of the event and is created by first concatenating:
 
-* The string timestamp
+* The string timestamp, the same as the t= part of Biotz-IoT-Signature
 * The character `.`
 * The actual alarm payload in JSON (the body of the POST request)
 
-And then generating an SHA256 hash of the concatenation using the webhook secret key.
+And then generating an HMAC-SHA256 hash of the concatenation using the webhook secret key.
