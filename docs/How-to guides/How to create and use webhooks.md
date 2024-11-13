@@ -1,9 +1,7 @@
-
 ---
 sidebar_position: 6
 sidebar_label: How to Create and Use a Webhook
 ---
-
 # How to Create and Use Webhooks
 
 ## Introduction
