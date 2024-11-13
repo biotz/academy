@@ -71,3 +71,5 @@ Where the string following t= is a timestamp and the one following `v1=` is the 
 * The actual alarm payload in JSON (the body of the POST request)
 
 And then generating an HMAC-SHA256 hash of the concatenation using the webhook secret key.
+For extra security and to prevent replay attacks, the client should also compare the provided timestamp with the timestamp when they received the webhook.  
+It is advisable to accept the webhook only within a specified time window.
