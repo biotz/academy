@@ -4,13 +4,13 @@ sidebar_label: Message-type Schema specification
 ---
 # Message-type Schema specification
 
-This is the specification for the schema of a message-type. The users will have to specify a device-type, with one to many message-type. Each message-type will have one to many schemas.
+This is the specification for the schema of a message-type. The users will have to specify a device-type, with one or several message-types. Each message-type will have one or more schemas.
 
-This schema is the structure of the data that the device will be sending in each communication with Biotz. The definition provided in the schema creation in the web application is the one used to validate the incoming data. Also, this will be used to structure the specific database schema for the data to be stored in a structured way.
+These schemas define the structure of the data that the device will be sending in each communication with Biotz. The definition provided during the schema creation in the web application is the one that will be used to validate the incoming data. Also, this will be used to structure the specific database schema for the data to be stored in a structured way.
 
 ## Supported data types in Message-Types {#supported-data-types}
 
-At the moment Biotz offers support to a subset of MessagePack data types that are compatible with JSON format. See [Data types detailed specification](#data-types-detailed-specification) below for additional details on each data type, or click on the individual data type names in the "Displayed in the UI" column.
+At the moment Biotz offers support for a subset of MessagePack data types that are compatible with the JSON format. See [Data types detailed specification](#data-types-detailed-specification) below for additional details on each data type, or click on the individual data type names in the "Displayed in the UI" column.
 
 The "DB Column Type" specifies the data type of the value stored in the database, once it has received and validated.
 
