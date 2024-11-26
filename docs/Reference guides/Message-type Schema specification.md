@@ -31,6 +31,7 @@ The "DB Column Type" specifies the data type of the value stored in the database
 | [Object](#object)                                               | object                                           | map                                              | N/A            | `{"key1": 1, "key2": "val"}`        |
 | [Collection of identical items](#collection-of-identical-items) | array (all elements are of the same type)        | array (all elements are of the same type)        | N/A            | `[1, 2, 3]` <br/> `["a", "b", "c"]` |
 | [Collection of unrelated items](#collection-of-unrelated-items) | array (each elements can be of a different type) | array (each elements can be of a different type) | N/A            | `[1, "a", [2 3]]`                   |
+| [To discard](#to-discard)                                       | N/A                                              | N/A                                              | N/A            | N/A                                 |
 
 [JSON Schema]: https://json-schema.org/draft/2020-12/json-schema-core#name-instance-data-model
 [MessagePack]: https://msgpack.org/
@@ -263,3 +264,7 @@ This constraints may seem a bit strange at first sight. But the use case for thi
 Collection of unrelated items: collection of any kind of item, present just once.
 
 #### Examples
+
+### To discard {#to-discard}
+
+Biotz "To discard" data type is a special data type. It does not impose any properties or constraints on the values that have this data assigned. In fact, the values that have this data type assigned are simply discarded (they not stored in the database at all), without even being looked at or checked. It is as if the messages from the devices neved had those values in the first place.
