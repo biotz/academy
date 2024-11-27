@@ -1,7 +1,7 @@
 ---
 title: Developer API
 description: Developer API reference
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Developer API
