@@ -36,7 +36,9 @@ The payload of the MQTT message is a UTF-8 encoded string, that holds a JSON obj
   "size": 0,
   "md5": "hash",
   "sha1": "hash",
-  "sha256": "hash"
+  "sha256": "hash",
+  "tags": {"tag-key-1": "tag-value-1",
+           "tag-key-2": "tag-value-2"}
 }
 ```
 
