@@ -42,6 +42,8 @@ The payload of the MQTT message is a UTF-8 encoded string, that holds a JSON obj
 }
 ```
 
+The `tags` key contains a JSON object with the tags associated with the firmware. If there are no tags, and empty object is provided.
+
 The download URL has an expiration period of **one week**. After that time the URL will no longer be valid.
 
 To summarize:
