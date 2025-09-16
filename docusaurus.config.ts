@@ -28,7 +28,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'es'],
   },
 
   presets: [
@@ -48,8 +48,42 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    // Preload critical fonts
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/fonts/your-main-font.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        href: '/img/scalability-2.webp',
+        as: 'image',
+        type: 'image/webp',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'dns-prefetch',
+        href: '//fonts.googleapis.com',
+      },
+    },
+  ],
+
   themeConfig: {
-    // Replace with your project's social card
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Biotz Academy',
@@ -61,34 +95,36 @@ const config: Config = {
       items: [
         {
           to: 'docs/category/tutorials',
-          position: 'left',
+          position: 'right',
           label: 'Tutorial',
         },
         {
           to: 'docs/category/how-to-guides',
-          position: 'left',
+          position: 'right',
           label: 'How to',
         },
         {
           to: 'docs/category/reference-guides',
-          position: 'left',
+          position: 'right',
           label: 'Reference guides',
         },
         {
           to: 'docs/category/examples',
-          position: 'left',
+          position: 'right',
           label: 'Examples',
         },
         {
           href: 'https://www.biotz.io/company/blog',
           label: 'Blog',
-          position: 'left'},
+          position: 'right'},
         {
           href: 'https://www.biotz.io/contact-us',
           label: 'Contact us',
           position: 'right',
           className: 'boton-navbar'
         },
+        { href: '/', label: 'EN', position: 'right', className: 'lang-toggle' },
+        { href: '/es/', label: 'ES', position: 'right', className: 'lang-toggle' },
       ],
     },
     footer: {

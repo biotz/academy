@@ -17,13 +17,12 @@
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(20, 15, 56, 0.1);
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-hover: transparent;
+  --ifm-menu-color-background-active: transparent;
 }
 
-/* Estilos para el título */
-
-
-
-/* Estilos para el modo oscuro */
 [data-theme='dark'] {
   --ifm-color-primary: #5133ff;
   --ifm-color-primary-dark: #21af90;
@@ -36,16 +35,131 @@
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-  /* Estilos específicos para el título y el tagline en modo oscuro */
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-hover: transparent;
+  --ifm-menu-color-background-active: transparent;
 }
 
 .footer {
-  background-color: #2309b8; /* Cambia #ff0000 por el color que desees */
-  color: #ffffff; /* Cambia #ffffff por el color del texto que desees */
+  background-color: #2309b8;
+  color: #ffffff;
 }
 
 .tutorial-image-container {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown, .theme-doc-markdown markdown {
+  background-color: #000 !important;
+}
+
+.navbar .lang-toggle {
+  color: rgba(255,255,255,0.85);
+  padding: 0 0.25rem;
+  transition: color 150ms ease;
+}
+
+.navbar .lang-toggle:hover {
+  color: #fff;
+  background: radial-gradient(60px 60px at 50% 50%, rgba(99,102,241,0.4), rgba(99,102,241,0) 60%);
+}
+
+html:not([lang='es']) .navbar .lang-toggle[href='/'],
+html:not([lang='es']) .navbar .lang-toggle[href=''] {
+  color: #A78BFA !important;
+}
+
+html[lang='es'] .navbar .lang-toggle[href='/es/'],
+html[lang='es'] .navbar .lang-toggle[href='/es'] {
+  color: #A78BFA !important;
+}
+
+html:not([lang='es']) .navbar .lang-toggle[href='/es/'],
+html:not([lang='es']) .navbar .lang-toggle[href='/es'] {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+html[lang='es'] .navbar .lang-toggle[href='/'],
+html[lang='es'] .navbar .lang-toggle[href=''] {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* Navbar links on the right: force white text */
+.navbar .navbar__items--right .navbar__link {
+  color: #ffffff !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .navbar__items--right .navbar__link:hover,
+.navbar .navbar__items--right .navbar__link:focus {
+  color: #A78BFA !important;
+}
+
+.navbar .navbar__items--right .navbar__link::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: 30%;
+  height: 40%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(99,102,241,0) 0%, rgba(99,102,241,0.35) 20%, rgba(99,102,241,0.45) 50%, rgba(99,102,241,0.35) 80%, rgba(99,102,241,0) 100%);
+  opacity: 0;
+  transition: opacity 150ms ease;
+  z-index: -1;
+}
+
+.navbar .navbar__items--right .navbar__link:hover::after,
+.navbar .navbar__items--right .navbar__link:focus::after {
+  opacity: 1;
+}
+
+.navbar .navbar__brand .navbar__title {
+  color: #ffffff !important;
+}
+
+.navbar .navbar__items--right .navbar__link svg {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+[data-theme='dark'] .hero .hero__title,
+[data-theme='dark'] .hero .hero__subtitle {
+  color: #ffffff !important;
+}
+
+.theme-doc-sidebar-menu .menu__link,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
+  color: #ffffff !important;
+}
+
+.theme-doc-sidebar-menu .menu__link:hover,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link:hover,
+.theme-doc-sidebar-menu .menu__link--active {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+.theme-doc-sidebar-menu .menu__caret,
+.theme-doc-sidebar-menu .menu__caret:before,
+.theme-doc-sidebar-menu .menu__caret:after,
+.theme-doc-sidebar-menu svg { color: #ffffff; fill: #ffffff; stroke: #ffffff; }
+
+.theme-doc-sidebar-container,
+.theme-doc-sidebar-container * {
+  color: #ffffff !important;
+}
+
+.theme-doc-sidebar-menu .menu__link:visited {
+  color: #ffffff !important;
+}
+
+.theme-doc-sidebar-menu .menu__link--sublist,
+.theme-doc-sidebar-menu .menu__link--sublist:hover,
+.theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  color: #ffffff !important;
 }
