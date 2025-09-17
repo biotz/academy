@@ -56,38 +56,6 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown, .theme-doc-mar
   background-color: #000 !important;
 }
 
-.navbar .lang-toggle {
-  color: rgba(255,255,255,0.85);
-  padding: 0 0.25rem;
-  transition: color 150ms ease;
-}
-
-.navbar .lang-toggle:hover {
-  color: #fff;
-  background: radial-gradient(60px 60px at 50% 50%, rgba(99,102,241,0.4), rgba(99,102,241,0) 60%);
-}
-
-html:not([lang='es']) .navbar .lang-toggle[href='/'],
-html:not([lang='es']) .navbar .lang-toggle[href=''] {
-  color: #A78BFA !important;
-}
-
-html[lang='es'] .navbar .lang-toggle[href='/es/'],
-html[lang='es'] .navbar .lang-toggle[href='/es'] {
-  color: #A78BFA !important;
-}
-
-html:not([lang='es']) .navbar .lang-toggle[href='/es/'],
-html:not([lang='es']) .navbar .lang-toggle[href='/es'] {
-  color: rgba(255,255,255,0.85) !important;
-}
-
-html[lang='es'] .navbar .lang-toggle[href='/'],
-html[lang='es'] .navbar .lang-toggle[href=''] {
-  color: rgba(255,255,255,0.85) !important;
-}
-
-/* Navbar links on the right: force white text */
 .navbar .navbar__items--right .navbar__link {
   color: #ffffff !important;
   position: relative;

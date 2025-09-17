@@ -23,12 +23,9 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   trailingSlash: false,
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es'],
+    locales: ['en'],
   },
 
   presets: [
@@ -49,7 +46,6 @@ const config: Config = {
   ],
 
   headTags: [
-    // Preload critical fonts
     {
       tagName: 'link',
       attributes: {
@@ -116,15 +112,14 @@ const config: Config = {
         {
           href: 'https://www.biotz.io/company/blog',
           label: 'Blog',
-          position: 'right'},
+          position: 'right'
+        },
         {
           href: 'https://www.biotz.io/contact-us',
           label: 'Contact us',
           position: 'right',
           className: 'boton-navbar'
         },
-        { href: '/', label: 'EN', position: 'right', className: 'lang-toggle' },
-        { href: '/es/', label: 'ES', position: 'right', className: 'lang-toggle' },
       ],
     },
     footer: {
