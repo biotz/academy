@@ -9,7 +9,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  /* Remove the hardcoded black background - let CSS variables handle it */
   background: var(--biotz-hero-bg, var(--ifm-hero-background-color, var(--ifm-background-color)));
 }
 
