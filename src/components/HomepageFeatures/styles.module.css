@@ -272,13 +272,14 @@
 }
 
 .cardBody h3 {
-  color: var(--biotz-text-primary);
+  color: #000000 !important;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
 
+
 .cardBody p {
-  color: var(--biotz-text-secondary);
+  color: #000000 !important;
   margin: 0;
   line-height: 1.5;
 }

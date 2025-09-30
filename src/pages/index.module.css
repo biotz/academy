@@ -9,7 +9,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: var(--biotz-hero-bg, var(--ifm-hero-background-color, var(--ifm-background-color)));
+  background: var(--biotz-hero-bg, var(--ifm-background-color));
 }
 
 @media screen and (max-width: 996px) {
@@ -52,32 +52,26 @@
 
 /* CTA Button - now adapts to both themes */
 .ctaButton {
-  border: 0;
-  color: var(--biotz-text-primary) !important;
-  background: var(--biotz-cta-bg, linear-gradient(180deg, 
-    rgba(81, 51, 255, 0.15) 0%, 
-    rgba(81, 51, 255, 0.08) 100%));
+  position: relative;
+  z-index: 0;
+  border: 1px solid var(--biotz-card-border, rgba(81,51,255,0.2));
   border-radius: 12px;
   padding: 0.85rem 2.2rem;
-  box-shadow: 
-    inset 0 1px 0 var(--biotz-cta-highlight, rgba(255,255,255,0.25)), 
-    0 6px 16px var(--biotz-card-shadow);
-  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+  color: var(--biotz-text-primary) !important;
+  background: var(--biotz-cta-bg, linear-gradient(180deg, rgba(81,51,255,0.15) 0%, rgba(81,51,255,0.08) 100%));
+  box-shadow: inset 0 1px 0 var(--biotz-cta-highlight, rgba(255,255,255,0.25)), 0 6px 16px var(--biotz-card-shadow);
   backdrop-filter: blur(2px);
-  position: relative;
   overflow: hidden;
-  z-index: 0;
-  border: 1px solid var(--biotz-card-border, rgba(81, 51, 255, 0.2));
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
 }
 
 .ctaButton:hover {
   transform: translateY(-1px);
-  box-shadow: 
-    inset 0 1px 0 var(--biotz-cta-highlight-hover, rgba(255,255,255,0.3)), 
-    0 10px 24px var(--biotz-card-shadow), 
-    0 0 24px rgba(99,102,241,0.4), 
-    0 0 48px rgba(99,102,241,0.2);
-  color: var(--biotz-text-primary) !important;
+  box-shadow: inset 0 1px 0 var(--biotz-cta-highlight-hover, 
+  rgba(255,255,255,0.3)), 
+  0 10px 24px var(--biotz-card-shadow), 
+  0 0 24px rgba(99,102,241,0.4), 
+  0 0 48px rgba(99,102,241,0.2);
 }
 
 .ctaButton:active {
@@ -92,9 +86,9 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(180px 180px at var(--x, -100px) var(--y, -100px), rgba(99,102,241,0.85), rgba(99,102,241,0) 70%);
-  transition: opacity 200ms ease;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 200ms ease;
   z-index: -1;
 }
 
@@ -264,33 +258,69 @@
 }
 
 /* Hover effects - Light mode */
-:root .scalability:hover .featureImage {
+:global(.scalability) {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
+    radial-gradient(120% 140% at 35% 15%, rgba(201, 151, 0, 0.2) 0%, rgba(138, 104, 0, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+:global(.plug) {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
+    radial-gradient(120% 140% at 50% 15%, rgba(67, 56, 202, 0.2) 0%, rgba(55, 48, 163, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+:global(.flexibility) {
+  background:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
+    radial-gradient(120% 140% at 55% 15%, rgba(13, 148, 136, 0.2) 0%, rgba(15, 118, 110, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+/* Hover effects - Dark mode */
+[data-theme='dark'] :global(.scalability) {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    radial-gradient(120% 140% at 35% 15%, rgba(201, 151, 0, 0.95) 0%, rgba(138, 104, 0, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+[data-theme='dark'] :global(.plug) {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    radial-gradient(120% 140% at 50% 15%, rgba(67, 56, 202, 0.95) 0%, rgba(55, 48, 163, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+[data-theme='dark'] :global(.flexibility) {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    radial-gradient(120% 140% at 55% 15%, rgba(13, 148, 136, 0.95) 0%, rgba(15, 118, 110, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+:root :global(.scalability):hover .featureImage {
   transform: scale(1.08) rotate(-5deg);
   filter: drop-shadow(0 8px 20px rgba(201, 151, 0, 0.3));
 }
 
-:root .plug:hover .featureImage {
+:root :global(.plug):hover .featureImage {
   transform: scale(1.08);
   filter: drop-shadow(0 8px 20px rgba(67, 56, 202, 0.3));
 }
 
-:root .flexibility:hover .featureImage {
+:root :global(.flexibility):hover .featureImage {
   transform: scale(1.08) rotate(5deg);
   filter: drop-shadow(0 8px 20px rgba(13, 148, 136, 0.3));
 }
 
-/* Hover effects - Dark mode */
-[data-theme='dark'] .scalability:hover .featureImage {
+[data-theme='dark'] :global(.scalability):hover .featureImage {
   transform: scale(1.08) rotate(-5deg);
   filter: drop-shadow(0 8px 20px rgba(201, 151, 0, 0.5));
 }
 
-[data-theme='dark'] .plug:hover .featureImage {
+[data-theme='dark'] :global(.plug):hover .featureImage {
   transform: scale(1.08);
   filter: drop-shadow(0 8px 20px rgba(67, 56, 202, 0.5));
 }
 
-[data-theme='dark'] .flexibility:hover .featureImage {
+[data-theme='dark'] :global(.flexibility):hover .featureImage {
   transform: scale(1.08) rotate(5deg);
   filter: drop-shadow(0 8px 20px rgba(13, 148, 136, 0.5));
 }

@@ -1,4 +1,6 @@
-/* Root variables for light mode */
+/* =========================
+   Root variables for light mode
+========================= */
 :root {
   --ifm-color-primary: #5133ff;
   --ifm-color-primary-dark: #4429e6;
@@ -9,7 +11,7 @@
   --ifm-color-primary-lightest: #8f6eff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(81, 51, 255, 0.1);
-  
+
   /* Light mode specific */
   --ifm-background-color: #ffffff;
   --ifm-font-color-base: #1c1e21;
@@ -26,7 +28,9 @@
   --biotz-cta-highlight-hover: rgba(255,255,255,0.3);
 }
 
-/* Dark mode variables */
+/* =========================
+   Root variables for dark mode
+========================= */
 [data-theme='dark'] {
   --ifm-color-primary: #5133ff;
   --ifm-color-primary-dark: #4429e6;
@@ -37,7 +41,7 @@
   --ifm-color-primary-lightest: #8f6eff;
   --ifm-font-color-base: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  
+
   /* Dark mode specific */
   --biotz-bg-primary: #000000;
   --biotz-text-primary: #ffffff;
@@ -53,13 +57,17 @@
   --biotz-cta-highlight-hover: rgba(255,255,255,0.3);
 }
 
-/* Global background */
+/* =========================
+   Global background & base
+========================= */
 html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   background-color: var(--biotz-bg-primary);
   color: var(--biotz-text-primary);
 }
 
-/* Features Section */
+/* =========================
+   Features Section
+========================= */
 .features {
   display: flex;
   align-items: center;
@@ -90,41 +98,15 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   flex-direction: column;
 }
 
-/* Light mode card hover */
-:root .card:hover {
+/* Hover - Light */
+.card:hover {
   transform: translateY(-15px);
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.15),
     0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-:root .heroBanner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 300%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(99, 102, 241, 0.03),
-    transparent
-  );
-  animation: shimmer 8s infinite;
-  pointer-events: none;
-}
-
-@keyframes shimmer {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-
-/* Dark mode card hover */
+/* Hover - Dark */
 [data-theme='dark'] .card:hover {
   transform: translateY(-15px);
   box-shadow:
@@ -164,88 +146,90 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   line-height: 1.5;
 }
 
-/* Light mode card variants */
-:root .scalability {
+/* =========================
+   Card Variants
+========================= */
+/* Light mode */
+.scalability {
   background:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
-    radial-gradient(120% 140% at 35% 15%, rgba(201, 151, 0, 0.2) 0%, rgba(138, 104, 0, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, #fff 100%),
+    radial-gradient(120% 140% at 35% 15%, rgba(201, 151, 0, 0.2) 0%, rgba(138, 104, 0, 0.15) 35%, #fff 100%);
 }
 
-:root .plug {
+.plug {
   background:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
-    radial-gradient(120% 140% at 50% 15%, rgba(67, 56, 202, 0.2) 0%, rgba(55, 48, 163, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, #fff 100%),
+    radial-gradient(120% 140% at 50% 15%, rgba(67, 56, 202, 0.2) 0%, rgba(55, 48, 163, 0.15) 35%, #fff 100%);
 }
 
-:root .flexibility {
+.flexibility {
   background:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 1) 100%),
-    radial-gradient(120% 140% at 55% 15%, rgba(13, 148, 136, 0.2) 0%, rgba(15, 118, 110, 0.15) 35%, rgba(255, 255, 255, 0.95) 100%);
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 45%, #fff 100%),
+    radial-gradient(120% 140% at 55% 15%, rgba(13, 148, 136, 0.2) 0%, rgba(15, 118, 110, 0.15) 35%, #fff 100%);
 }
 
-/* Dark mode card variants */
+/* Dark mode */
 [data-theme='dark'] .scalability {
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, #000 100%),
     radial-gradient(120% 140% at 35% 15%, rgba(201, 151, 0, 0.95) 0%, rgba(138, 104, 0, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
 }
 
 [data-theme='dark'] .plug {
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, #000 100%),
     radial-gradient(120% 140% at 50% 15%, rgba(67, 56, 202, 0.95) 0%, rgba(55, 48, 163, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
 }
 
 [data-theme='dark'] .flexibility {
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, #000 100%),
     radial-gradient(120% 140% at 55% 15%, rgba(13, 148, 136, 0.95) 0%, rgba(15, 118, 110, 0.9) 35%, rgba(0, 0, 0, 0.85) 100%);
 }
 
-/* Light mode hover effects */
-:root .scalability:hover .featureImage {
+/* =========================
+   Hover Effects per Variant
+========================= */
+/* Light */
+.scalability:hover .featureImage {
   transform: scale(1.08) rotate(-5deg);
   filter: drop-shadow(0 8px 20px rgba(201, 151, 0, 0.3));
 }
-
-:root .plug:hover .featureImage {
+.plug:hover .featureImage {
   transform: scale(1.08);
   filter: drop-shadow(0 8px 20px rgba(67, 56, 202, 0.3));
 }
-
-:root .flexibility:hover .featureImage {
+.flexibility:hover .featureImage {
   transform: scale(1.08) rotate(5deg);
   filter: drop-shadow(0 8px 20px rgba(13, 148, 136, 0.3));
 }
 
-/* Dark mode hover effects */
+/* Dark */
 [data-theme='dark'] .scalability:hover .featureImage {
   transform: scale(1.08) rotate(-5deg);
   filter: drop-shadow(0 8px 20px rgba(201, 151, 0, 0.5));
 }
-
 [data-theme='dark'] .plug:hover .featureImage {
   transform: scale(1.08);
   filter: drop-shadow(0 8px 20px rgba(67, 56, 202, 0.5));
 }
-
 [data-theme='dark'] .flexibility:hover .featureImage {
   transform: scale(1.08) rotate(5deg);
   filter: drop-shadow(0 8px 20px rgba(13, 148, 136, 0.5));
 }
 
-/* Navbar styling */
+/* =========================
+   Navbar
+========================= */
 .navbar .navbar__items--right .navbar__link {
   color: var(--biotz-navbar-text);
   position: relative;
   overflow: hidden;
 }
-
 .navbar .navbar__items--right .navbar__link:hover,
 .navbar .navbar__items--right .navbar__link:focus {
   color: var(--ifm-color-primary);
 }
-
 .navbar .navbar__items--right .navbar__link::after {
   content: "";
   position: absolute;
@@ -264,16 +248,17 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   transition: opacity 150ms ease;
   z-index: -1;
 }
-
 .navbar .navbar__items--right .navbar__link:hover::after,
 .navbar .navbar__items--right .navbar__link:focus::after {
   opacity: 1;
 }
-
 .navbar .navbar__brand .navbar__title {
   color: var(--biotz-navbar-text);
 }
 
+/* =========================
+   Hero Banner
+========================= */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -281,20 +266,32 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   overflow: hidden;
   background: var(--biotz-hero-bg, var(--ifm-hero-background-color, var(--ifm-background-color)));
 }
-
-.heroBanner .hero__title,
-.heroBanner :global(.hero__title),
-.hero .hero__title,
-.hero--primary .hero__title {
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 102, 241, 0.03),
+    transparent
+  );
+  animation: shimmer 8s infinite;
+  pointer-events: none;
+}
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+.heroBanner .hero__title {
   color: var(--biotz-text-primary) !important;
   font-weight: 800;
   letter-spacing: -0.025em;
 }
-
-.heroBanner .hero__subtitle,
-.heroBanner :global(.hero__subtitle),
-.hero .hero__subtitle,
-.hero--primary .hero__subtitle {
+.heroBanner .hero__subtitle {
   color: var(--biotz-text-secondary) !important;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -303,7 +300,9 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   font-weight: 400;
 }
 
-/* CTA Button - works for both themes */
+/* =========================
+   CTA Button
+========================= */
 .ctaButton {
   border: 0;
   color: var(--biotz-text-primary) !important;
@@ -322,7 +321,6 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   z-index: 0;
   border: 1px solid var(--biotz-card-border, rgba(81, 51, 255, 0.2));
 }
-
 .ctaButton:hover {
   transform: translateY(-1px);
   box-shadow: 
@@ -332,38 +330,37 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
     0 0 48px rgba(99,102,241,0.2);
   color: var(--biotz-text-primary) !important;
 }
-/* Footer */
+
+/* =========================
+   Footer
+========================= */
 .footer {
   background-color: var(--ifm-color-primary);
   color: #ffffff;
 }
-
 .footer a {
   color: #ffffff;
   text-decoration: none;
   transition: color 200ms ease;
 }
-
 .footer a:hover {
   color: #e2deff !important;
-  text-decoration: none;
 }
-
 .footer .footer__link-item {
   color: #ffffff;
 }
-
 .footer .footer__link-item:hover {
   color: #e2deff !important;
 }
 
-/* Sidebar menu */
+/* =========================
+   Sidebar menu
+========================= */
 .theme-doc-sidebar-menu .menu__link,
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
   color: var(--biotz-text-primary);
   transition: all 200ms ease;
 }
-
 .theme-doc-sidebar-menu .menu__link:hover,
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link:hover,
 .theme-doc-sidebar-menu .menu__link--active {
@@ -371,83 +368,38 @@ html, body, .navbar, .main-wrapper, .footer, .theme-doc-markdown {
   background: transparent;
 }
 
-/* Responsive design */
+/* =========================
+   Responsive
+========================= */
 @media screen and (max-width: 996px) {
-  .featureImage {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .card {
-    min-height: 380px;
-  }
-  
-  .cardImage {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .heroBanner {
-    padding: 2rem;
-  }
-  
-  .heroBanner :global(.hero__subtitle) {
-    font-size: 1.25rem;
-    padding: 0 1rem;
-  }
+  .featureImage { width: 200px; height: 200px; }
+  .card { min-height: 380px; }
+  .cardImage { padding: 1rem; margin-bottom: 1rem; }
+  .card:hover { transform: translateY(-10px); }
+  .heroBanner { padding: 2rem; }
+  .heroBanner .hero__subtitle { font-size: 1.25rem; padding: 0 1rem; }
 }
-
 @media screen and (max-width: 768px) {
-  .featureImage {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .card {
-    min-height: 340px;
-    padding: 1.5rem;
-  }
-  
-  .cardImage {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .card:hover {
-    transform: translateY(-8px);
-  }
-  
-  .heroBanner :global(.hero__subtitle) {
-    font-size: 1.15rem;
-  }
+  .featureImage { width: 180px; height: 180px; }
+  .card { min-height: 340px; padding: 1.5rem; }
+  .cardImage { padding: 1rem; margin-bottom: 1rem; }
+  .card:hover { transform: translateY(-8px); }
+  .heroBanner .hero__subtitle { font-size: 1.15rem; }
 }
-
 @media screen and (max-width: 480px) {
-  .featureImage {
-    width: 160px;
-    height: 160px;
-  }
-  
-  .card {
-    min-height: 300px;
-  }
-  
-  .card:hover {
-    transform: translateY(-6px);
-  }
+  .featureImage { width: 160px; height: 160px; }
+  .card { min-height: 300px; }
+  .card:hover { transform: translateY(-6px); }
 }
 
-/* Utility classes */
+/* =========================
+   Utilities
+========================= */
 .tutorial-image-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
 .buttons {
   display: flex;
   align-items: center;
