@@ -267,4 +267,4 @@ Collection of unrelated items: collection of any kind of item, present just once
 
 ### To discard {#to-discard}
 
-Biotz "To discard" data type is a special data type. It does not impose any properties or constraints on the values that have this data assigned. In fact, the values that have this data type assigned are simply discarded (they not stored in the database at all), without even being looked at or checked. It is as if the messages from the devices neved had those values in the first place.
+Biotz "To discard" data type is a special data type. It does not impose any properties or constraints on the values that have this data type assigned. In fact, the values that have this data type assigned are simply discarded (they are not stored in the database at all), without even being looked at or checked. It is as if the messages from the devices never had those values in the first place.
