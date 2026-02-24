@@ -3,7 +3,10 @@ services:
     build:
       context: .
     ports:
-      - '3000:3000/tcp'
+      - mode: ingress
+        target: 3000
+        published: 3000
+        protocol: tcp
     volumes:
       - '.:/app'
     command:
