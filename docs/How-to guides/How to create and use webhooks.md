@@ -6,15 +6,20 @@ sidebar_label: How to Create and Use a Webhook
 
 ## Introduction
 
-Biotz provides webhook subscriptions for its alarms. In short, a <a href="https://en.wikipedia.org/wiki/Webhook">webhook</a> is a method used by one application (e.g., Biotz) to send real-time data to another application (e.g., customers) when a specific event occurs.
+Biotz provides webhook subscriptions for its alarms. In short, a <a href="https://en.wikipedia.org/wiki/Webhook">webhook</a> is a method used by one application (e.g., Biotz) to send data to another application (e.g., to a customer's application) when a specific event occurs. In this case, the event can be one of two things:
+
+- a given alarm has been triggered, or
+- a device event has been received.
 
 ## Prerequisites
 
-There are no prerequisites for creating a webhook. However, webhooks are used for device events, so to use them, you need a device type that includes at least one message type and schema. It's also recommended to have a device that has already transmitted some data.
+There are no prerequisites for creating a webhook. However, webhooks are used to notify external applications that a given alarm has been triggerd, or that a device event has been received. Therefore, in order for the webhooks to be invoked, you will need a device type that defines at least one message type and schema, and one alarm for that message type and schema, or a device event.
+
+It is also recommended to have a device that transmits some data that can trigger that alarm, or that sends that device event message.
 
 ## Creating a Webhook
 
-Webhooks are created from the "Developer Tools" section in the sidebar. To create a webhook, provide a name and the mandatory "callback URL" (i.e., the URL to which the event data will be pushed). Webhooks only support HTTPS URLs.
+Webhooks are created from the "Developer Tools" section in the sidebar. To create a webhook, provide a name and the mandatory "callback URL" (i.e., the URL to which the webhook data will be pushed). Webhooks only support HTTPS URLs.
 
 <div class="tutorial-image-container">
 ![Developer Tools -> Webhooks](img/developer_tools_webhooks.png)
@@ -32,7 +37,7 @@ Upon clicking "Save," the webhook is created, and a "secret" is automatically ge
 ![Webhook Created!](img/webhook_created.png)
 </div>
 
-Now the webhook is ready for use. Don't forget to take note of the webhook's name and secret for later use!
+Now the webhook is ready for use. Do not forget to take note of the webhook's secret, as you will need it to verity the webhook calls in the external application. In any case, you can always come back to the Webhooks management view and copy its secret at any time.
 
 ## Registering a Device Alarm with the Webhook
 
@@ -54,7 +59,7 @@ Search for your webhook by name, add it from the dropdown, and then save. Now yo
 ![Search and Add Webhook](img/alarm_trigger_webhook_3.png)
 </div>
 
-## Receiving Webhook Event Data
+## Receiving Webhook Data
 
 If all the above steps were followed and there is at least one device that generates alarms, then alarm data will be sent to the webhook URI via POST.
 
