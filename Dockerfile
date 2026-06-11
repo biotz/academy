@@ -1,4 +1,4 @@
-FROM node:20-trixie-slim
+FROM node:24-trixie-slim
 
 ENV BINARIES_INSTALL_PATH=/usr/local/bin
 

@@ -5,11 +5,11 @@ services:
     ports:
       - mode: ingress
         target: 3000
-        published: 3000
+        published: 3001
         protocol: tcp
     volumes:
       - '.:/app'
     command:
       - bash
       - -c
-      - "npm install --maxsocket 1 && npm start"
+      - "npm install --maxsockets 1 && npm start"
