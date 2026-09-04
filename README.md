@@ -12,7 +12,6 @@ This collection of guides has been crafted to assist you in navigating the featu
 
 Your go-to resource for in-depth information about the IoT platform's funcionalities and components.
 
-
 ## Local Development
 
 The local development is explained step by step in the <a href="/SETUP.md" target="_self">SETUP.md</a> file.
@@ -24,7 +23,3 @@ The deployment is made by the github/workflows <a href="/.github/workflows/deplo
 ## Academy page
 
 Here is the Biotz Academy <a href="/https://academy.biotz.io/" target="_self">page</a>.
-
-
-
-
